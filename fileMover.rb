@@ -1,5 +1,9 @@
 #!/usr/bin/ruby -w
 
+require 'logger'
+logger = Logger.new('logfile.log')
+logger.level = Logger::DEBUG
+
 $filename = 'output4.txt'
 
 class Tree
@@ -91,11 +95,19 @@ class Tree
     return @flatList[number] 
   end
   def tellAll()
-    # PRINTS entire table
+    # returns entire table
     @flatList.each_index { | i |
-      puts "Index number #{i}:"
-      puts @flatList[i]
+      logger.warn ("Index number #{i}:")
+      logger.warn (@flatList[i].to_s)
     }
+  end
+  def doSomethingRecursively(number,action,actionees)
+    puts "Entering dsr for #{number}"
+    @flatList[number]['Children'].reverse.each { | x |
+      doSomethingRecursively(x,action,{ })
+    }
+    action.call(@flatList[number])
+
   end
 end
 
@@ -193,10 +205,14 @@ class EdDirectoryClass < Tree
     #below: remove the old parent's child record
     @flatList[oldParent]['Children'].delete(number)
     # HERE NEEDS MORE WORK 
-    @flatList[number]['LongName'] = getLongName(number)
-    @flatList[number]['Children'].each { | x |
-      @flatList[x]['LongName'] = getLongName(x)
+    setLongName = lambda { | x |
+      x['LongName'] = getLongName(x)
     }
+    doSomethingRecursively(number,setLongName, { })
+    ##@flatList[number]['LongName'] = getLongName(number)
+    #@flatList[number]['Children'].each { | x |
+      #@flatList[x]['LongName'] = getLongName(x)
+    #}
   end
 end
 
@@ -274,6 +290,7 @@ end
 inputFile = File.new($filename,'r')
 dirTree = EdDirectoryClass.new(inputFile.readlines)
 inputFile.close
+dirTree.tellAll
 edPrompt = EdPromptClass.new(dirTree)
 while (true) do 
   print "> "
