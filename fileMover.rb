@@ -4,7 +4,7 @@ require 'logger'
 logger = Logger.new('logfile.log')
 logger.level = Logger::DEBUG
 
-$filename = 'output4.txt'
+$filename = 'randomised2.txt'
 
 class Tree
   @@addChildrenByDefault = true
@@ -97,8 +97,10 @@ class Tree
   def tellAll()
     # returns entire table
     @flatList.each_index { | i |
-      logger.warn ("Index number #{i}:")
-      logger.warn (@flatList[i].to_s)
+      #logger.warn ("Index number #{i}:")
+      #logger.warn (@flatList[i].to_s)
+      puts "Result for entry #{i}:"
+      puts @flatList[i];
     }
   end
   def doSomethingRecursively(number,action,actionees)
@@ -106,7 +108,7 @@ class Tree
     @flatList[number]['Children'].reverse.each { | x |
       doSomethingRecursively(x,action,{ })
     }
-    action.call(@flatList[number])
+    action.call (number)
 
   end
 end
@@ -206,7 +208,7 @@ class EdDirectoryClass < Tree
     @flatList[oldParent]['Children'].delete(number)
     # HERE NEEDS MORE WORK 
     setLongName = lambda { | x |
-      x['LongName'] = getLongName(x)
+      @flatList[x]['LongName'] = getLongName(x)
     }
     doSomethingRecursively(number,setLongName, { })
     ##@flatList[number]['LongName'] = getLongName(number)
@@ -249,7 +251,7 @@ class EdPromptClass
       end
       currentDirName = getCurrentDirDetails['LongName']
       puts "Current directory is #{currentDirName}"
-    elsif (promptWords[0] == 'exit') then
+    elsif (promptWords[0] == 'exit' or promptWords[0] == 'quit') then
       puts "Quitting."
       exit
     elsif (promptWords[0] == 'del') then
