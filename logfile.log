@@ -1,0 +1,1052 @@
+# Logfile created on 2016-02-03 12:48:20 +0000 by logger.rb/v1.2.7
+D, [2016-02-04T08:25:59.017362 #2695] DEBUG -- : Started logger
+D, [2016-02-04T08:25:59.017553 #2695] DEBUG -- : Started logger 2
+D, [2016-02-04T08:26:38.910872 #2702] DEBUG -- : test
+D, [2016-02-04T08:32:17.677985 #11233] DEBUG -- : Entered AddNew for the following hash:
+D, [2016-02-04T08:32:17.678395 #11233] DEBUG -- : {"Name"=>"dir1.rb", "Parent"=>1, "LongName"=>"/.git/dir1.rb"}
+
+D, [2016-02-04T08:35:23.391678 #11233] DEBUG -- : Entered AddNew for the following hash:
+D, [2016-02-04T08:35:23.392057 #11233] DEBUG -- : {"Name"=>"dir1.rb", "Parent"=>7, "LongName"=>"/tests/dir1.rb"}
+
+D, [2016-02-04T08:36:04.196634 #19936] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:36:04.196938 #19936] DEBUG -- : {"Name"=>"dir1.rb", "Parent"=>7, "LongName"=>"/tests/dir1.rb", "Children"=>[]}
+D, [2016-02-04T08:36:17.407002 #19936] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:36:17.407298 #19936] DEBUG -- : {"Name"=>"test2.rb", "Parent"=>65, "LongName"=>"/tests/dir1.rb/test2.rb", "Children"=>[]}
+I, [2016-02-04T08:38:16.831732 #20163]  INFO -- : 
+STARTED--------------------------------
+D, [2016-02-04T08:38:58.504403 #20163] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:38:58.504701 #20163] DEBUG -- : {"Name"=>"dir2.rb", "Parent"=>1, "LongName"=>"/.git/dir2.rb", "Children"=>[]}
+D, [2016-02-04T08:38:58.504918 #20163] DEBUG -- : Current length is 65
+D, [2016-02-04T08:39:07.881057 #20163] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:39:07.881349 #20163] DEBUG -- : {"Name"=>"test2.rb", "Parent"=>65, "LongName"=>"/.git/dir2.rb/test2.rb", "Children"=>[]}
+D, [2016-02-04T08:39:07.881566 #20163] DEBUG -- : Current length is 66
+D, [2016-02-04T08:40:28.497743 #20163] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:40:28.498052 #20163] DEBUG -- : {"Name"=>"", "Parent"=>7, "LongName"=>"/tests/", "Children"=>[]}
+D, [2016-02-04T08:40:28.498259 #20163] DEBUG -- : Current length is 67
+D, [2016-02-04T08:40:28.498528 #20163] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:40:28.498669 #20163] DEBUG -- : {"Name"=>"dir2.rb", "Parent"=>67, "LongName"=>"/tests//dir2.rb", "Children"=>[]}
+D, [2016-02-04T08:40:28.498849 #20163] DEBUG -- : Current length is 68
+D, [2016-02-04T08:40:28.499168 #20163] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:40:28.499311 #20163] DEBUG -- : {"Name"=>"test2.rb", "Parent"=>68, "LongName"=>"/tests//dir2.rb/test2.rb", "Children"=>[]}
+D, [2016-02-04T08:40:28.499490 #20163] DEBUG -- : Current length is 69
+I, [2016-02-04T08:41:11.071195 #20163]  INFO -- : QUIT-----------------------------------------------
+I, [2016-02-04T08:41:12.739889 #20177]  INFO -- : 
+
+
+I, [2016-02-04T08:41:12.740046 #20177]  INFO -- : STARTED--------------------------------
+D, [2016-02-04T08:41:36.805424 #20177] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:41:36.805758 #20177] DEBUG -- : {"Name"=>"", "Parent"=>7, "LongName"=>"/tests/", "Children"=>[]}
+D, [2016-02-04T08:41:36.805977 #20177] DEBUG -- : Current length is 65
+D, [2016-02-04T08:41:36.806306 #20177] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:41:36.806453 #20177] DEBUG -- : {"Name"=>"index", "Parent"=>65, "LongName"=>"/tests//index", "Children"=>[]}
+D, [2016-02-04T08:41:36.806635 #20177] DEBUG -- : Current length is 66
+I, [2016-02-04T08:46:24.444674 #20177]  INFO -- : QUIT-----------------------------------------------
+I, [2016-02-04T08:46:25.723540 #24570]  INFO -- : 
+
+
+I, [2016-02-04T08:46:25.723644 #24570]  INFO -- : STARTED--------------------------------
+D, [2016-02-04T08:46:38.726564 #24570] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:46:38.726864 #24570] DEBUG -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>7, "LongName"=>"/tests/COMMIT_EDITMSG", "Children"=>[]}
+D, [2016-02-04T08:46:38.727108 #24570] DEBUG -- : Current length is 65
+D, [2016-02-04T08:46:58.771062 #24570] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:46:58.771159 #24570] DEBUG -- : {"Name"=>"index", "Parent"=>65, "LongName"=>"/tests/COMMIT_EDITMSG/index", "Children"=>[]}
+D, [2016-02-04T08:46:58.771258 #24570] DEBUG -- : Current length is 66
+I, [2016-02-04T08:51:17.906876 #24570]  INFO -- : QUIT-----------------------------------------------
+I, [2016-02-04T08:51:18.808903 #26111]  INFO -- : 
+
+
+I, [2016-02-04T08:51:18.809051 #26111]  INFO -- : started--------------------------------
+I, [2016-02-04T08:51:52.284670 #26114]  INFO -- : 
+
+
+I, [2016-02-04T08:51:52.284822 #26114]  INFO -- : started--------------------------------
+I, [2016-02-04T08:51:54.253321 #26116]  INFO -- : 
+
+
+I, [2016-02-04T08:51:54.253477 #26116]  INFO -- : started--------------------------------
+I, [2016-02-04T08:52:19.269734 #26119]  INFO -- : 
+
+
+I, [2016-02-04T08:52:19.269885 #26119]  INFO -- : STARTED--------------------------------
+I, [2016-02-04T08:52:22.951965 #26119]  INFO -- : QUIT-----------------------------------------------
+I, [2016-02-04T08:52:46.073883 #26122]  INFO -- : 
+
+
+I, [2016-02-04T08:52:46.074043 #26122]  INFO -- : STARTED--------------------------------
+I, [2016-02-04T08:53:03.490045 #26124]  INFO -- : 
+
+
+I, [2016-02-04T08:53:03.490186 #26124]  INFO -- : STARTED--------------------------------
+I, [2016-02-04T08:53:37.308485 #26128]  INFO -- : 
+
+
+I, [2016-02-04T08:53:37.308632 #26128]  INFO -- : STARTED--------------------------------
+I, [2016-02-04T08:53:39.652419 #26128]  INFO -- : Record of number 64
+I, [2016-02-04T08:53:39.652725 #26128]  INFO -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>1, "LongName"=>"/.git/COMMIT_EDITMSG", "Children"=>[]}
+I, [2016-02-04T08:53:45.194471 #26130]  INFO -- : 
+
+
+I, [2016-02-04T08:53:45.194618 #26130]  INFO -- : STARTED--------------------------------
+I, [2016-02-04T08:53:49.459301 #26130]  INFO -- : No record of record number 66
+D, [2016-02-04T08:54:02.889779 #26130] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:54:02.890144 #26130] DEBUG -- : {"Name"=>".gittests", "Parent"=>0, "LongName"=>"/.gittests", "Children"=>[]}
+D, [2016-02-04T08:54:02.890476 #26130] DEBUG -- : Current length is 65
+D, [2016-02-04T08:54:02.890856 #26130] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:54:02.891025 #26130] DEBUG -- : {"Name"=>"hash1.rb", "Parent"=>65, "LongName"=>"/.gittests/hash1.rb", "Children"=>[]}
+D, [2016-02-04T08:54:02.891271 #26130] DEBUG -- : Current length is 66
+D, [2016-02-04T08:54:02.891781 #26130] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:54:02.891947 #26130] DEBUG -- : {"Name"=>"split1.rb", "Parent"=>65, "LongName"=>"/.gittests/split1.rb", "Children"=>[]}
+D, [2016-02-04T08:54:02.892186 #26130] DEBUG -- : Current length is 67
+I, [2016-02-04T08:55:14.646107 #26130]  INFO -- : QUIT-----------------------------------------------
+I, [2016-02-04T08:55:23.555406 #26138]  INFO -- : 
+
+
+I, [2016-02-04T08:55:23.555560 #26138]  INFO -- : STARTED--------------------------------
+D, [2016-02-04T08:55:25.151899 #26138] DEBUG -- : Recorded command ls
+D, [2016-02-04T08:55:30.331998 #26138] DEBUG -- : Recorded command cp dir1.rb /tests
+D, [2016-02-04T08:55:30.332786 #26138] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:55:30.333056 #26138] DEBUG -- : {"Name"=>"testsdir1.rb", "Parent"=>0, "LongName"=>"/testsdir1.rb", "Children"=>[]}
+D, [2016-02-04T08:55:30.333321 #26138] DEBUG -- : Current length is 65
+D, [2016-02-04T08:55:52.845925 #26138] DEBUG -- : Recorded command ls
+D, [2016-02-04T08:58:03.258440 #26138] DEBUG -- : Recorded command quit
+I, [2016-02-04T08:58:03.258901 #26138]  INFO -- : QUIT-----------------------------------------------
+I, [2016-02-04T08:58:09.632218 #26146]  INFO -- : 
+
+
+I, [2016-02-04T08:58:09.632358 #26146]  INFO -- : STARTED--------------------------------
+D, [2016-02-04T08:58:10.533677 #26146] DEBUG -- : Recorded command ls
+D, [2016-02-04T08:58:13.729964 #26146] DEBUG -- : Recorded command cp dir1.rb /tests
+I, [2016-02-04T08:58:13.730624 #26146]  INFO -- : Just replaced /dir1.rb with /testsdir1.rb
+D, [2016-02-04T08:58:13.730966 #26146] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:58:13.731120 #26146] DEBUG -- : {"Name"=>"testsdir1.rb", "Parent"=>0, "LongName"=>"/testsdir1.rb", "Children"=>[]}
+D, [2016-02-04T08:58:13.731413 #26146] DEBUG -- : Current length is 65
+D, [2016-02-04T08:58:30.118083 #26146] DEBUG -- : Recorded command ls
+D, [2016-02-04T08:58:37.966319 #26146] DEBUG -- : Recorded command cd .git
+D, [2016-02-04T08:58:38.349697 #26146] DEBUG -- : Recorded command ls
+D, [2016-02-04T08:58:44.386383 #26146] DEBUG -- : Recorded command cp COMMIT_EDITMSG /tests
+I, [2016-02-04T08:58:44.387049 #26146]  INFO -- : Just replaced /.git/COMMIT_EDITMSG with /tests/COMMIT_EDITMSG
+D, [2016-02-04T08:58:44.387456 #26146] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:58:44.387628 #26146] DEBUG -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>7, "LongName"=>"/tests/COMMIT_EDITMSG", "Children"=>[]}
+D, [2016-02-04T08:58:44.387900 #26146] DEBUG -- : Current length is 66
+D, [2016-02-04T08:59:05.058383 #26146] DEBUG -- : Recorded command cp index /tests/COMMIT_EDITMSG
+I, [2016-02-04T08:59:05.059167 #26146]  INFO -- : Just replaced /.git/index with /tests/COMMIT_EDITMSG/index
+D, [2016-02-04T08:59:05.059704 #26146] DEBUG -- : Just added the following hash:
+D, [2016-02-04T08:59:05.059876 #26146] DEBUG -- : {"Name"=>"index", "Parent"=>66, "LongName"=>"/tests/COMMIT_EDITMSG/index", "Children"=>[]}
+D, [2016-02-04T08:59:05.060129 #26146] DEBUG -- : Current length is 67
+D, [2016-02-04T08:59:18.418161 #26146] DEBUG -- : Recorded command describe 66
+I, [2016-02-04T08:59:18.418546 #26146]  INFO -- : Record of number 66
+I, [2016-02-04T08:59:18.418753 #26146]  INFO -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>7, "LongName"=>"/tests/COMMIT_EDITMSG", "Children"=>[67]}
+D, [2016-02-04T09:02:32.134540 #26146] DEBUG -- : Recorded command quit
+I, [2016-02-04T09:02:32.134962 #26146]  INFO -- : QUIT-----------------------------------------------
+now adding forward-slashes
+I, [2016-02-04T09:02:46.455123 #26161]  INFO -- : 
+
+
+I, [2016-02-04T09:02:46.455271 #26161]  INFO -- : STARTED--------------------------------
+D, [2016-02-04T09:02:50.076227 #26161] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:02:56.176254 #26161] DEBUG -- : Recorded command cp dir1.rb /tests
+I, [2016-02-04T09:02:56.176849 #26161]  INFO -- : Just replaced /dir1.rb with /tests/dir1.rb
+D, [2016-02-04T09:02:56.177217 #26161] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:02:56.177376 #26161] DEBUG -- : {"Name"=>"dir1.rb", "Parent"=>7, "LongName"=>"/tests/dir1.rb", "Children"=>[]}
+D, [2016-02-04T09:02:56.177576 #26161] DEBUG -- : Current length is 65
+D, [2016-02-04T09:03:01.791818 #26161] DEBUG -- : Recorded command cd .git
+D, [2016-02-04T09:03:02.251306 #26161] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:03:07.112380 #26161] DEBUG -- : Recorded command cp COMMIT_EDITMSG /tests
+I, [2016-02-04T09:03:07.112986 #26161]  INFO -- : Just replaced /.git/COMMIT_EDITMSG with /tests//COMMIT_EDITMSG
+D, [2016-02-04T09:03:07.113341 #26161] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:03:07.113499 #26161] DEBUG -- : {"Name"=>"", "Parent"=>7, "LongName"=>"/tests/", "Children"=>[]}
+D, [2016-02-04T09:03:07.113742 #26161] DEBUG -- : Current length is 66
+D, [2016-02-04T09:03:07.113978 #26161] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:03:07.114114 #26161] DEBUG -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>66, "LongName"=>"/tests//COMMIT_EDITMSG", "Children"=>[]}
+D, [2016-02-04T09:03:07.114274 #26161] DEBUG -- : Current length is 67
+D, [2016-02-04T09:04:26.308941 #26161] DEBUG -- : Recorded command quit
+I, [2016-02-04T09:04:26.309402 #26161]  INFO -- : QUIT-----------------------------------------------
+I, [2016-02-04T09:04:28.450007 #26165]  INFO -- : 
+
+
+I, [2016-02-04T09:04:28.450155 #26165]  INFO -- : STARTED--------------------------------
+D, [2016-02-04T09:04:30.187278 #26165] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:04:35.703059 #26165] DEBUG -- : Recorded command cp dir1.rb /tests
+I, [2016-02-04T09:04:35.703638 #26165]  INFO -- : Just replaced /dir1.rb with /tests/dir1.rb
+D, [2016-02-04T09:04:35.703973 #26165] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:04:35.704141 #26165] DEBUG -- : {"Name"=>"dir1.rb", "Parent"=>7, "LongName"=>"/tests/dir1.rb", "Children"=>[]}
+D, [2016-02-04T09:04:35.704420 #26165] DEBUG -- : Current length is 65
+D, [2016-02-04T09:04:42.912741 #26165] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:04:44.275729 #26165] DEBUG -- : Recorded command cd tests
+D, [2016-02-04T09:04:44.677227 #26165] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:04:46.706007 #26165] DEBUG -- : Recorded command cd ..
+D, [2016-02-04T09:04:48.352761 #26165] DEBUG -- : Recorded command cd .git
+D, [2016-02-04T09:04:48.922428 #26165] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:04:54.615448 #26165] DEBUG -- : Recorded command cp COMMIT_EDITMSG /tests
+I, [2016-02-04T09:04:54.616060 #26165]  INFO -- : Just replaced /.git/COMMIT_EDITMSG with /tests//COMMIT_EDITMSG
+D, [2016-02-04T09:04:54.616391 #26165] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:04:54.616541 #26165] DEBUG -- : {"Name"=>"", "Parent"=>7, "LongName"=>"/tests/", "Children"=>[]}
+D, [2016-02-04T09:04:54.616749 #26165] DEBUG -- : Current length is 66
+D, [2016-02-04T09:04:54.617019 #26165] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:04:54.617159 #26165] DEBUG -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>66, "LongName"=>"/tests//COMMIT_EDITMSG", "Children"=>[]}
+D, [2016-02-04T09:04:54.617334 #26165] DEBUG -- : Current length is 67
+D, [2016-02-04T09:05:12.326637 #26165] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:05:14.234632 #26165] DEBUG -- : Recorded command cd ..
+D, [2016-02-04T09:05:14.940864 #26165] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:05:16.017546 #26165] DEBUG -- : Recorded command cd tests
+D, [2016-02-04T09:05:16.429729 #26165] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:05:17.945606 #26165] DEBUG -- : Recorded command cd ..
+D, [2016-02-04T09:06:29.995794 #26165] DEBUG -- : Recorded command quit
+I, [2016-02-04T09:06:29.996248 #26165]  INFO -- : QUIT-----------------------------------------------
+I, [2016-02-04T09:06:31.704758 #29026]  INFO -- : 
+
+
+I, [2016-02-04T09:06:31.704857 #29026]  INFO -- : STARTED--------------------------------
+D, [2016-02-04T09:06:35.193854 #29026] DEBUG -- : Recorded command cd .git
+D, [2016-02-04T09:06:37.127334 #29026] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:06:42.172426 #29026] DEBUG -- : Recorded command cp COMMIT_EDITMSG /tests
+I, [2016-02-04T09:06:42.172673 #29026]  INFO -- : Just replaced /.git/COMMIT_EDITMSG with /tests/COMMIT_EDITMSG
+D, [2016-02-04T09:06:42.172767 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:42.172808 #29026] DEBUG -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>7, "LongName"=>"/tests/COMMIT_EDITMSG", "Children"=>[]}
+D, [2016-02-04T09:06:42.172872 #29026] DEBUG -- : Current length is 65
+D, [2016-02-04T09:06:46.409924 #29026] DEBUG -- : Recorded command cd ..
+D, [2016-02-04T09:06:46.859369 #29026] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:06:47.842692 #29026] DEBUG -- : Recorded command cd tests
+D, [2016-02-04T09:06:48.255061 #29026] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:06:49.657350 #29026] DEBUG -- : Recorded command cd ..
+D, [2016-02-04T09:06:50.300369 #29026] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:06:59.301445 #29026] DEBUG -- : Recorded command cp .git /tests
+I, [2016-02-04T09:06:59.301988 #29026]  INFO -- : Just replaced /.git/logs/refs/remotes/origin/master with /tests/.git/logs/refs/remotes/origin/master
+I, [2016-02-04T09:06:59.302260 #29026]  INFO -- : Just replaced /.git/logs/refs/remotes/origin with /tests/.git/logs/refs/remotes/origin
+I, [2016-02-04T09:06:59.302566 #29026]  INFO -- : Just replaced /.git/logs/refs/remotes with /tests/.git/logs/refs/remotes
+I, [2016-02-04T09:06:59.302789 #29026]  INFO -- : Just replaced /.git/logs/refs/heads/master with /tests/.git/logs/refs/heads/master
+I, [2016-02-04T09:06:59.302998 #29026]  INFO -- : Just replaced /.git/logs/refs/heads with /tests/.git/logs/refs/heads
+I, [2016-02-04T09:06:59.303193 #29026]  INFO -- : Just replaced /.git/logs/refs with /tests/.git/logs/refs
+I, [2016-02-04T09:06:59.303412 #29026]  INFO -- : Just replaced /.git/logs/HEAD with /tests/.git/logs/HEAD
+I, [2016-02-04T09:06:59.303766 #29026]  INFO -- : Just replaced /.git/logs with /tests/.git/logs
+I, [2016-02-04T09:06:59.304057 #29026]  INFO -- : Just replaced /.git/hooks/pre-applypatch.sample with /tests/.git/hooks/pre-applypatch.sample
+I, [2016-02-04T09:06:59.304455 #29026]  INFO -- : Just replaced /.git/hooks/prepare-commit-msg.sample with /tests/.git/hooks/prepare-commit-msg.sample
+I, [2016-02-04T09:06:59.304742 #29026]  INFO -- : Just replaced /.git/hooks/update.sample with /tests/.git/hooks/update.sample
+I, [2016-02-04T09:06:59.304925 #29026]  INFO -- : Just replaced /.git/hooks/pre-rebase.sample with /tests/.git/hooks/pre-rebase.sample
+I, [2016-02-04T09:06:59.305088 #29026]  INFO -- : Just replaced /.git/hooks/post-update.sample with /tests/.git/hooks/post-update.sample
+I, [2016-02-04T09:06:59.305249 #29026]  INFO -- : Just replaced /.git/hooks/applypatch-msg.sample with /tests/.git/hooks/applypatch-msg.sample
+I, [2016-02-04T09:06:59.305417 #29026]  INFO -- : Just replaced /.git/hooks/commit-msg.sample with /tests/.git/hooks/commit-msg.sample
+I, [2016-02-04T09:06:59.305580 #29026]  INFO -- : Just replaced /.git/hooks/pre-commit.sample with /tests/.git/hooks/pre-commit.sample
+I, [2016-02-04T09:06:59.305982 #29026]  INFO -- : Just replaced /.git/hooks/pre-push.sample with /tests/.git/hooks/pre-push.sample
+I, [2016-02-04T09:06:59.306476 #29026]  INFO -- : Just replaced /.git/hooks with /tests/.git/hooks
+I, [2016-02-04T09:06:59.306847 #29026]  INFO -- : Just replaced /.git/refs/heads/master with /tests/.git/refs/heads/master
+I, [2016-02-04T09:06:59.307176 #29026]  INFO -- : Just replaced /.git/refs/heads with /tests/.git/refs/heads
+I, [2016-02-04T09:06:59.307425 #29026]  INFO -- : Just replaced /.git/refs/remotes/origin/master with /tests/.git/refs/remotes/origin/master
+I, [2016-02-04T09:06:59.307637 #29026]  INFO -- : Just replaced /.git/refs/remotes/origin with /tests/.git/refs/remotes/origin
+I, [2016-02-04T09:06:59.307845 #29026]  INFO -- : Just replaced /.git/refs/remotes with /tests/.git/refs/remotes
+I, [2016-02-04T09:06:59.308054 #29026]  INFO -- : Just replaced /.git/refs/tags with /tests/.git/refs/tags
+I, [2016-02-04T09:06:59.308267 #29026]  INFO -- : Just replaced /.git/refs with /tests/.git/refs
+I, [2016-02-04T09:06:59.308444 #29026]  INFO -- : Just replaced /.git/objects/pack with /tests/.git/objects/pack
+I, [2016-02-04T09:06:59.308608 #29026]  INFO -- : Just replaced /.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8 with /tests/.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8
+I, [2016-02-04T09:06:59.308778 #29026]  INFO -- : Just replaced /.git/objects/51 with /tests/.git/objects/51
+I, [2016-02-04T09:06:59.308979 #29026]  INFO -- : Just replaced /.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1 with /tests/.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1
+I, [2016-02-04T09:06:59.309202 #29026]  INFO -- : Just replaced /.git/objects/ae with /tests/.git/objects/ae
+I, [2016-02-04T09:06:59.309406 #29026]  INFO -- : Just replaced /.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76 with /tests/.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76
+I, [2016-02-04T09:06:59.309653 #29026]  INFO -- : Just replaced /.git/objects/1e with /tests/.git/objects/1e
+I, [2016-02-04T09:06:59.309873 #29026]  INFO -- : Just replaced /.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0 with /tests/.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0
+I, [2016-02-04T09:06:59.310080 #29026]  INFO -- : Just replaced /.git/objects/ca with /tests/.git/objects/ca
+I, [2016-02-04T09:06:59.310366 #29026]  INFO -- : Just replaced /.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c with /tests/.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c
+I, [2016-02-04T09:06:59.310578 #29026]  INFO -- : Just replaced /.git/objects/a1 with /tests/.git/objects/a1
+I, [2016-02-04T09:06:59.310790 #29026]  INFO -- : Just replaced /.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24 with /tests/.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24
+I, [2016-02-04T09:06:59.311001 #29026]  INFO -- : Just replaced /.git/objects/cc with /tests/.git/objects/cc
+I, [2016-02-04T09:06:59.311292 #29026]  INFO -- : Just replaced /.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0 with /tests/.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0
+I, [2016-02-04T09:06:59.311511 #29026]  INFO -- : Just replaced /.git/objects/6b with /tests/.git/objects/6b
+I, [2016-02-04T09:06:59.311730 #29026]  INFO -- : Just replaced /.git/objects/info with /tests/.git/objects/info
+I, [2016-02-04T09:06:59.312054 #29026]  INFO -- : Just replaced /.git/objects with /tests/.git/objects
+I, [2016-02-04T09:06:59.312232 #29026]  INFO -- : Just replaced /.git/branches with /tests/.git/branches
+I, [2016-02-04T09:06:59.312401 #29026]  INFO -- : Just replaced /.git/HEAD with /tests/.git/HEAD
+I, [2016-02-04T09:06:59.312657 #29026]  INFO -- : Just replaced /.git/config with /tests/.git/config
+I, [2016-02-04T09:06:59.312852 #29026]  INFO -- : Just replaced /.git/description with /tests/.git/description
+I, [2016-02-04T09:06:59.313087 #29026]  INFO -- : Just replaced /.git/info/exclude with /tests/.git/info/exclude
+I, [2016-02-04T09:06:59.313261 #29026]  INFO -- : Just replaced /.git/info with /tests/.git/info
+I, [2016-02-04T09:06:59.313511 #29026]  INFO -- : Just replaced /.git/index with /tests/.git/index
+I, [2016-02-04T09:06:59.313809 #29026]  INFO -- : Just replaced /.git/COMMIT_EDITMSG with /tests/.git/COMMIT_EDITMSG
+I, [2016-02-04T09:06:59.314035 #29026]  INFO -- : Just replaced /.git with /tests/.git
+D, [2016-02-04T09:06:59.314523 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.314698 #29026] DEBUG -- : {"Name"=>".git", "Parent"=>7, "LongName"=>"/tests/.git", "Children"=>[]}
+D, [2016-02-04T09:06:59.315232 #29026] DEBUG -- : Current length is 66
+D, [2016-02-04T09:06:59.315551 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.315753 #29026] DEBUG -- : {"Name"=>"logs", "Parent"=>66, "LongName"=>"/tests/.git/logs", "Children"=>[]}
+D, [2016-02-04T09:06:59.315917 #29026] DEBUG -- : Current length is 67
+D, [2016-02-04T09:06:59.316121 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.316228 #29026] DEBUG -- : {"Name"=>"refs", "Parent"=>67, "LongName"=>"/tests/.git/logs/refs", "Children"=>[]}
+D, [2016-02-04T09:06:59.316358 #29026] DEBUG -- : Current length is 68
+D, [2016-02-04T09:06:59.316573 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.316697 #29026] DEBUG -- : {"Name"=>"remotes", "Parent"=>68, "LongName"=>"/tests/.git/logs/refs/remotes", "Children"=>[]}
+D, [2016-02-04T09:06:59.316855 #29026] DEBUG -- : Current length is 69
+D, [2016-02-04T09:06:59.317102 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.317253 #29026] DEBUG -- : {"Name"=>"origin", "Parent"=>69, "LongName"=>"/tests/.git/logs/refs/remotes/origin", "Children"=>[]}
+D, [2016-02-04T09:06:59.317390 #29026] DEBUG -- : Current length is 70
+D, [2016-02-04T09:06:59.317723 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.317845 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>70, "LongName"=>"/tests/.git/logs/refs/remotes/origin/master", "Children"=>[]}
+D, [2016-02-04T09:06:59.318064 #29026] DEBUG -- : Current length is 71
+D, [2016-02-04T09:06:59.319120 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.319247 #29026] DEBUG -- : {"Name"=>"heads", "Parent"=>68, "LongName"=>"/tests/.git/logs/refs/heads", "Children"=>[]}
+D, [2016-02-04T09:06:59.319397 #29026] DEBUG -- : Current length is 72
+D, [2016-02-04T09:06:59.319636 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.319741 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>72, "LongName"=>"/tests/.git/logs/refs/heads/master", "Children"=>[]}
+D, [2016-02-04T09:06:59.319890 #29026] DEBUG -- : Current length is 73
+D, [2016-02-04T09:06:59.320839 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.320952 #29026] DEBUG -- : {"Name"=>"HEAD", "Parent"=>67, "LongName"=>"/tests/.git/logs/HEAD", "Children"=>[]}
+D, [2016-02-04T09:06:59.321160 #29026] DEBUG -- : Current length is 74
+D, [2016-02-04T09:06:59.321731 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.321835 #29026] DEBUG -- : {"Name"=>"hooks", "Parent"=>66, "LongName"=>"/tests/.git/hooks", "Children"=>[]}
+D, [2016-02-04T09:06:59.321961 #29026] DEBUG -- : Current length is 75
+D, [2016-02-04T09:06:59.322261 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.322408 #29026] DEBUG -- : {"Name"=>"pre-applypatch.sample", "Parent"=>75, "LongName"=>"/tests/.git/hooks/pre-applypatch.sample", "Children"=>[]}
+D, [2016-02-04T09:06:59.322599 #29026] DEBUG -- : Current length is 76
+D, [2016-02-04T09:06:59.323080 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.323221 #29026] DEBUG -- : {"Name"=>"prepare-commit-msg.sample", "Parent"=>75, "LongName"=>"/tests/.git/hooks/prepare-commit-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:06:59.323398 #29026] DEBUG -- : Current length is 77
+D, [2016-02-04T09:06:59.323851 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.323959 #29026] DEBUG -- : {"Name"=>"update.sample", "Parent"=>75, "LongName"=>"/tests/.git/hooks/update.sample", "Children"=>[]}
+D, [2016-02-04T09:06:59.324107 #29026] DEBUG -- : Current length is 78
+D, [2016-02-04T09:06:59.324519 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.324628 #29026] DEBUG -- : {"Name"=>"pre-rebase.sample", "Parent"=>75, "LongName"=>"/tests/.git/hooks/pre-rebase.sample", "Children"=>[]}
+D, [2016-02-04T09:06:59.324778 #29026] DEBUG -- : Current length is 79
+D, [2016-02-04T09:06:59.325263 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.325372 #29026] DEBUG -- : {"Name"=>"post-update.sample", "Parent"=>75, "LongName"=>"/tests/.git/hooks/post-update.sample", "Children"=>[]}
+D, [2016-02-04T09:06:59.325521 #29026] DEBUG -- : Current length is 80
+D, [2016-02-04T09:06:59.325924 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.326024 #29026] DEBUG -- : {"Name"=>"applypatch-msg.sample", "Parent"=>75, "LongName"=>"/tests/.git/hooks/applypatch-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:06:59.326166 #29026] DEBUG -- : Current length is 81
+D, [2016-02-04T09:06:59.326529 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.326631 #29026] DEBUG -- : {"Name"=>"commit-msg.sample", "Parent"=>75, "LongName"=>"/tests/.git/hooks/commit-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:06:59.326852 #29026] DEBUG -- : Current length is 82
+D, [2016-02-04T09:06:59.327214 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.327312 #29026] DEBUG -- : {"Name"=>"pre-commit.sample", "Parent"=>75, "LongName"=>"/tests/.git/hooks/pre-commit.sample", "Children"=>[]}
+D, [2016-02-04T09:06:59.327451 #29026] DEBUG -- : Current length is 83
+D, [2016-02-04T09:06:59.327813 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.327911 #29026] DEBUG -- : {"Name"=>"pre-push.sample", "Parent"=>75, "LongName"=>"/tests/.git/hooks/pre-push.sample", "Children"=>[]}
+D, [2016-02-04T09:06:59.328050 #29026] DEBUG -- : Current length is 84
+D, [2016-02-04T09:06:59.328612 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.328721 #29026] DEBUG -- : {"Name"=>"refs", "Parent"=>66, "LongName"=>"/tests/.git/refs", "Children"=>[]}
+D, [2016-02-04T09:06:59.328858 #29026] DEBUG -- : Current length is 85
+D, [2016-02-04T09:06:59.329091 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.329188 #29026] DEBUG -- : {"Name"=>"heads", "Parent"=>85, "LongName"=>"/tests/.git/refs/heads", "Children"=>[]}
+D, [2016-02-04T09:06:59.329326 #29026] DEBUG -- : Current length is 86
+D, [2016-02-04T09:06:59.329648 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.329787 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>86, "LongName"=>"/tests/.git/refs/heads/master", "Children"=>[]}
+D, [2016-02-04T09:06:59.329917 #29026] DEBUG -- : Current length is 87
+D, [2016-02-04T09:06:59.330451 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.330578 #29026] DEBUG -- : {"Name"=>"remotes", "Parent"=>85, "LongName"=>"/tests/.git/refs/remotes", "Children"=>[]}
+D, [2016-02-04T09:06:59.330683 #29026] DEBUG -- : Current length is 88
+D, [2016-02-04T09:06:59.330846 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.330927 #29026] DEBUG -- : {"Name"=>"origin", "Parent"=>88, "LongName"=>"/tests/.git/refs/remotes/origin", "Children"=>[]}
+D, [2016-02-04T09:06:59.331029 #29026] DEBUG -- : Current length is 89
+D, [2016-02-04T09:06:59.331318 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.331402 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>89, "LongName"=>"/tests/.git/refs/remotes/origin/master", "Children"=>[]}
+D, [2016-02-04T09:06:59.331538 #29026] DEBUG -- : Current length is 90
+D, [2016-02-04T09:06:59.333089 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.333233 #29026] DEBUG -- : {"Name"=>"tags", "Parent"=>85, "LongName"=>"/tests/.git/refs/tags", "Children"=>[]}
+D, [2016-02-04T09:06:59.333342 #29026] DEBUG -- : Current length is 91
+D, [2016-02-04T09:06:59.333724 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.333813 #29026] DEBUG -- : {"Name"=>"objects", "Parent"=>66, "LongName"=>"/tests/.git/objects", "Children"=>[]}
+D, [2016-02-04T09:06:59.333924 #29026] DEBUG -- : Current length is 92
+D, [2016-02-04T09:06:59.334244 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.334357 #29026] DEBUG -- : {"Name"=>"pack", "Parent"=>92, "LongName"=>"/tests/.git/objects/pack", "Children"=>[]}
+D, [2016-02-04T09:06:59.334505 #29026] DEBUG -- : Current length is 93
+D, [2016-02-04T09:06:59.334897 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.335026 #29026] DEBUG -- : {"Name"=>"51", "Parent"=>92, "LongName"=>"/tests/.git/objects/51", "Children"=>[]}
+D, [2016-02-04T09:06:59.335197 #29026] DEBUG -- : Current length is 94
+D, [2016-02-04T09:06:59.335448 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.335546 #29026] DEBUG -- : {"Name"=>"50663d21320c9d1eca935240a71eefb5a4dac8", "Parent"=>94, "LongName"=>"/tests/.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8", "Children"=>[]}
+D, [2016-02-04T09:06:59.335678 #29026] DEBUG -- : Current length is 95
+D, [2016-02-04T09:06:59.336348 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.336449 #29026] DEBUG -- : {"Name"=>"ae", "Parent"=>92, "LongName"=>"/tests/.git/objects/ae", "Children"=>[]}
+D, [2016-02-04T09:06:59.336632 #29026] DEBUG -- : Current length is 96
+D, [2016-02-04T09:06:59.336917 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.337015 #29026] DEBUG -- : {"Name"=>"be3e7db03c1bedbd75b4e3b09c47c139117cc1", "Parent"=>96, "LongName"=>"/tests/.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1", "Children"=>[]}
+D, [2016-02-04T09:06:59.337132 #29026] DEBUG -- : Current length is 97
+D, [2016-02-04T09:06:59.337699 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.337795 #29026] DEBUG -- : {"Name"=>"1e", "Parent"=>92, "LongName"=>"/tests/.git/objects/1e", "Children"=>[]}
+D, [2016-02-04T09:06:59.337941 #29026] DEBUG -- : Current length is 98
+D, [2016-02-04T09:06:59.338122 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.338204 #29026] DEBUG -- : {"Name"=>"bb1130cd25ca078c2b94fa644eae55065c3a76", "Parent"=>98, "LongName"=>"/tests/.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76", "Children"=>[]}
+D, [2016-02-04T09:06:59.338312 #29026] DEBUG -- : Current length is 99
+D, [2016-02-04T09:06:59.338896 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.339008 #29026] DEBUG -- : {"Name"=>"ca", "Parent"=>92, "LongName"=>"/tests/.git/objects/ca", "Children"=>[]}
+D, [2016-02-04T09:06:59.339137 #29026] DEBUG -- : Current length is 100
+D, [2016-02-04T09:06:59.339344 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.339439 #29026] DEBUG -- : {"Name"=>"04cd0ad96a1a7fd4f290b463a4afc6e63657a0", "Parent"=>100, "LongName"=>"/tests/.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0", "Children"=>[]}
+D, [2016-02-04T09:06:59.339661 #29026] DEBUG -- : Current length is 101
+D, [2016-02-04T09:06:59.340269 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.340380 #29026] DEBUG -- : {"Name"=>"a1", "Parent"=>92, "LongName"=>"/tests/.git/objects/a1", "Children"=>[]}
+D, [2016-02-04T09:06:59.340493 #29026] DEBUG -- : Current length is 102
+D, [2016-02-04T09:06:59.340686 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.340775 #29026] DEBUG -- : {"Name"=>"48a97d961f46d6355fab3d0a8600476d73210c", "Parent"=>102, "LongName"=>"/tests/.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c", "Children"=>[]}
+D, [2016-02-04T09:06:59.340894 #29026] DEBUG -- : Current length is 103
+D, [2016-02-04T09:06:59.341513 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.341604 #29026] DEBUG -- : {"Name"=>"cc", "Parent"=>92, "LongName"=>"/tests/.git/objects/cc", "Children"=>[]}
+D, [2016-02-04T09:06:59.341765 #29026] DEBUG -- : Current length is 104
+D, [2016-02-04T09:06:59.341955 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.342037 #29026] DEBUG -- : {"Name"=>"aced389a9b8cf793e38307b8be014117cc5e24", "Parent"=>104, "LongName"=>"/tests/.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24", "Children"=>[]}
+D, [2016-02-04T09:06:59.342144 #29026] DEBUG -- : Current length is 105
+D, [2016-02-04T09:06:59.342705 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.342789 #29026] DEBUG -- : {"Name"=>"6b", "Parent"=>92, "LongName"=>"/tests/.git/objects/6b", "Children"=>[]}
+D, [2016-02-04T09:06:59.342891 #29026] DEBUG -- : Current length is 106
+D, [2016-02-04T09:06:59.343073 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.343156 #29026] DEBUG -- : {"Name"=>"4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0", "Parent"=>106, "LongName"=>"/tests/.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0", "Children"=>[]}
+D, [2016-02-04T09:06:59.343261 #29026] DEBUG -- : Current length is 107
+D, [2016-02-04T09:06:59.343822 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.343907 #29026] DEBUG -- : {"Name"=>"info", "Parent"=>92, "LongName"=>"/tests/.git/objects/info", "Children"=>[]}
+D, [2016-02-04T09:06:59.344007 #29026] DEBUG -- : Current length is 108
+D, [2016-02-04T09:06:59.344387 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.344471 #29026] DEBUG -- : {"Name"=>"branches", "Parent"=>66, "LongName"=>"/tests/.git/branches", "Children"=>[]}
+D, [2016-02-04T09:06:59.344605 #29026] DEBUG -- : Current length is 109
+D, [2016-02-04T09:06:59.344855 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.344938 #29026] DEBUG -- : {"Name"=>"HEAD", "Parent"=>66, "LongName"=>"/tests/.git/HEAD", "Children"=>[]}
+D, [2016-02-04T09:06:59.345039 #29026] DEBUG -- : Current length is 110
+D, [2016-02-04T09:06:59.345316 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.345402 #29026] DEBUG -- : {"Name"=>"config", "Parent"=>66, "LongName"=>"/tests/.git/config", "Children"=>[]}
+D, [2016-02-04T09:06:59.345503 #29026] DEBUG -- : Current length is 111
+D, [2016-02-04T09:06:59.345792 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.345881 #29026] DEBUG -- : {"Name"=>"description", "Parent"=>66, "LongName"=>"/tests/.git/description", "Children"=>[]}
+D, [2016-02-04T09:06:59.345983 #29026] DEBUG -- : Current length is 112
+D, [2016-02-04T09:06:59.346236 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.346320 #29026] DEBUG -- : {"Name"=>"info", "Parent"=>66, "LongName"=>"/tests/.git/info", "Children"=>[]}
+D, [2016-02-04T09:06:59.346420 #29026] DEBUG -- : Current length is 113
+D, [2016-02-04T09:06:59.346642 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.346725 #29026] DEBUG -- : {"Name"=>"exclude", "Parent"=>113, "LongName"=>"/tests/.git/info/exclude", "Children"=>[]}
+D, [2016-02-04T09:06:59.346886 #29026] DEBUG -- : Current length is 114
+D, [2016-02-04T09:06:59.347275 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.347359 #29026] DEBUG -- : {"Name"=>"index", "Parent"=>66, "LongName"=>"/tests/.git/index", "Children"=>[]}
+D, [2016-02-04T09:06:59.347462 #29026] DEBUG -- : Current length is 115
+D, [2016-02-04T09:06:59.347750 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:06:59.347835 #29026] DEBUG -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>66, "LongName"=>"/tests/.git/COMMIT_EDITMSG", "Children"=>[]}
+D, [2016-02-04T09:06:59.347938 #29026] DEBUG -- : Current length is 116
+D, [2016-02-04T09:07:56.234524 #29026] DEBUG -- : Recorded command cp .git /tests/.git
+I, [2016-02-04T09:07:56.235241 #29026]  INFO -- : Just replaced /.git/logs/refs/remotes/origin/master with /tests/.git/.git/logs/refs/remotes/origin/master
+I, [2016-02-04T09:07:56.235480 #29026]  INFO -- : Just replaced /.git/logs/refs/remotes/origin with /tests/.git/.git/logs/refs/remotes/origin
+I, [2016-02-04T09:07:56.235662 #29026]  INFO -- : Just replaced /.git/logs/refs/remotes with /tests/.git/.git/logs/refs/remotes
+I, [2016-02-04T09:07:56.235883 #29026]  INFO -- : Just replaced /.git/logs/refs/heads/master with /tests/.git/.git/logs/refs/heads/master
+I, [2016-02-04T09:07:56.236061 #29026]  INFO -- : Just replaced /.git/logs/refs/heads with /tests/.git/.git/logs/refs/heads
+I, [2016-02-04T09:07:56.236279 #29026]  INFO -- : Just replaced /.git/logs/refs with /tests/.git/.git/logs/refs
+I, [2016-02-04T09:07:56.236495 #29026]  INFO -- : Just replaced /.git/logs/HEAD with /tests/.git/.git/logs/HEAD
+I, [2016-02-04T09:07:56.236711 #29026]  INFO -- : Just replaced /.git/logs with /tests/.git/.git/logs
+I, [2016-02-04T09:07:56.236930 #29026]  INFO -- : Just replaced /.git/hooks/pre-applypatch.sample with /tests/.git/.git/hooks/pre-applypatch.sample
+I, [2016-02-04T09:07:56.237147 #29026]  INFO -- : Just replaced /.git/hooks/prepare-commit-msg.sample with /tests/.git/.git/hooks/prepare-commit-msg.sample
+I, [2016-02-04T09:07:56.237372 #29026]  INFO -- : Just replaced /.git/hooks/update.sample with /tests/.git/.git/hooks/update.sample
+I, [2016-02-04T09:07:56.237583 #29026]  INFO -- : Just replaced /.git/hooks/pre-rebase.sample with /tests/.git/.git/hooks/pre-rebase.sample
+I, [2016-02-04T09:07:56.237827 #29026]  INFO -- : Just replaced /.git/hooks/post-update.sample with /tests/.git/.git/hooks/post-update.sample
+I, [2016-02-04T09:07:56.238029 #29026]  INFO -- : Just replaced /.git/hooks/applypatch-msg.sample with /tests/.git/.git/hooks/applypatch-msg.sample
+I, [2016-02-04T09:07:56.238228 #29026]  INFO -- : Just replaced /.git/hooks/commit-msg.sample with /tests/.git/.git/hooks/commit-msg.sample
+I, [2016-02-04T09:07:56.238403 #29026]  INFO -- : Just replaced /.git/hooks/pre-commit.sample with /tests/.git/.git/hooks/pre-commit.sample
+I, [2016-02-04T09:07:56.238578 #29026]  INFO -- : Just replaced /.git/hooks/pre-push.sample with /tests/.git/.git/hooks/pre-push.sample
+I, [2016-02-04T09:07:56.238750 #29026]  INFO -- : Just replaced /.git/hooks with /tests/.git/.git/hooks
+I, [2016-02-04T09:07:56.238987 #29026]  INFO -- : Just replaced /.git/refs/heads/master with /tests/.git/.git/refs/heads/master
+I, [2016-02-04T09:07:56.239168 #29026]  INFO -- : Just replaced /.git/refs/heads with /tests/.git/.git/refs/heads
+I, [2016-02-04T09:07:56.239347 #29026]  INFO -- : Just replaced /.git/refs/remotes/origin/master with /tests/.git/.git/refs/remotes/origin/master
+I, [2016-02-04T09:07:56.239521 #29026]  INFO -- : Just replaced /.git/refs/remotes/origin with /tests/.git/.git/refs/remotes/origin
+I, [2016-02-04T09:07:56.239692 #29026]  INFO -- : Just replaced /.git/refs/remotes with /tests/.git/.git/refs/remotes
+I, [2016-02-04T09:07:56.239866 #29026]  INFO -- : Just replaced /.git/refs/tags with /tests/.git/.git/refs/tags
+I, [2016-02-04T09:07:56.240036 #29026]  INFO -- : Just replaced /.git/refs with /tests/.git/.git/refs
+I, [2016-02-04T09:07:56.240213 #29026]  INFO -- : Just replaced /.git/objects/pack with /tests/.git/.git/objects/pack
+I, [2016-02-04T09:07:56.240460 #29026]  INFO -- : Just replaced /.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8 with /tests/.git/.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8
+I, [2016-02-04T09:07:56.240644 #29026]  INFO -- : Just replaced /.git/objects/51 with /tests/.git/.git/objects/51
+I, [2016-02-04T09:07:56.240817 #29026]  INFO -- : Just replaced /.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1 with /tests/.git/.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1
+I, [2016-02-04T09:07:56.241019 #29026]  INFO -- : Just replaced /.git/objects/ae with /tests/.git/.git/objects/ae
+I, [2016-02-04T09:07:56.241212 #29026]  INFO -- : Just replaced /.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76 with /tests/.git/.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76
+I, [2016-02-04T09:07:56.241383 #29026]  INFO -- : Just replaced /.git/objects/1e with /tests/.git/.git/objects/1e
+I, [2016-02-04T09:07:56.241564 #29026]  INFO -- : Just replaced /.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0 with /tests/.git/.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0
+I, [2016-02-04T09:07:56.241822 #29026]  INFO -- : Just replaced /.git/objects/ca with /tests/.git/.git/objects/ca
+I, [2016-02-04T09:07:56.242115 #29026]  INFO -- : Just replaced /.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c with /tests/.git/.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c
+I, [2016-02-04T09:07:56.242352 #29026]  INFO -- : Just replaced /.git/objects/a1 with /tests/.git/.git/objects/a1
+I, [2016-02-04T09:07:56.242628 #29026]  INFO -- : Just replaced /.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24 with /tests/.git/.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24
+I, [2016-02-04T09:07:56.242879 #29026]  INFO -- : Just replaced /.git/objects/cc with /tests/.git/.git/objects/cc
+I, [2016-02-04T09:07:56.243162 #29026]  INFO -- : Just replaced /.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0 with /tests/.git/.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0
+I, [2016-02-04T09:07:56.243432 #29026]  INFO -- : Just replaced /.git/objects/6b with /tests/.git/.git/objects/6b
+I, [2016-02-04T09:07:56.244067 #29026]  INFO -- : Just replaced /.git/objects/info with /tests/.git/.git/objects/info
+I, [2016-02-04T09:07:56.244364 #29026]  INFO -- : Just replaced /.git/objects with /tests/.git/.git/objects
+I, [2016-02-04T09:07:56.244645 #29026]  INFO -- : Just replaced /.git/branches with /tests/.git/.git/branches
+I, [2016-02-04T09:07:56.244859 #29026]  INFO -- : Just replaced /.git/HEAD with /tests/.git/.git/HEAD
+I, [2016-02-04T09:07:56.245059 #29026]  INFO -- : Just replaced /.git/config with /tests/.git/.git/config
+I, [2016-02-04T09:07:56.245262 #29026]  INFO -- : Just replaced /.git/description with /tests/.git/.git/description
+I, [2016-02-04T09:07:56.245457 #29026]  INFO -- : Just replaced /.git/info/exclude with /tests/.git/.git/info/exclude
+I, [2016-02-04T09:07:56.245722 #29026]  INFO -- : Just replaced /.git/info with /tests/.git/.git/info
+I, [2016-02-04T09:07:56.245962 #29026]  INFO -- : Just replaced /.git/index with /tests/.git/.git/index
+I, [2016-02-04T09:07:56.246135 #29026]  INFO -- : Just replaced /.git/COMMIT_EDITMSG with /tests/.git/.git/COMMIT_EDITMSG
+I, [2016-02-04T09:07:56.246303 #29026]  INFO -- : Just replaced /.git with /tests/.git/.git
+D, [2016-02-04T09:07:56.246750 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.246873 #29026] DEBUG -- : {"Name"=>".git", "Parent"=>66, "LongName"=>"/tests/.git/.git", "Children"=>[]}
+D, [2016-02-04T09:07:56.247072 #29026] DEBUG -- : Current length is 117
+D, [2016-02-04T09:07:56.247490 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.247672 #29026] DEBUG -- : {"Name"=>"logs", "Parent"=>117, "LongName"=>"/tests/.git/.git/logs", "Children"=>[]}
+D, [2016-02-04T09:07:56.247894 #29026] DEBUG -- : Current length is 118
+D, [2016-02-04T09:07:56.248330 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.248617 #29026] DEBUG -- : {"Name"=>"refs", "Parent"=>118, "LongName"=>"/tests/.git/.git/logs/refs", "Children"=>[]}
+D, [2016-02-04T09:07:56.248943 #29026] DEBUG -- : Current length is 119
+D, [2016-02-04T09:07:56.249435 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.249794 #29026] DEBUG -- : {"Name"=>"remotes", "Parent"=>119, "LongName"=>"/tests/.git/.git/logs/refs/remotes", "Children"=>[]}
+D, [2016-02-04T09:07:56.250052 #29026] DEBUG -- : Current length is 120
+D, [2016-02-04T09:07:56.250453 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.250605 #29026] DEBUG -- : {"Name"=>"origin", "Parent"=>120, "LongName"=>"/tests/.git/.git/logs/refs/remotes/origin", "Children"=>[]}
+D, [2016-02-04T09:07:56.250751 #29026] DEBUG -- : Current length is 121
+D, [2016-02-04T09:07:56.251079 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.251219 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>121, "LongName"=>"/tests/.git/.git/logs/refs/remotes/origin/master", "Children"=>[]}
+D, [2016-02-04T09:07:56.251368 #29026] DEBUG -- : Current length is 122
+D, [2016-02-04T09:07:56.253947 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.254100 #29026] DEBUG -- : {"Name"=>"heads", "Parent"=>119, "LongName"=>"/tests/.git/.git/logs/refs/heads", "Children"=>[]}
+D, [2016-02-04T09:07:56.254257 #29026] DEBUG -- : Current length is 123
+D, [2016-02-04T09:07:56.254543 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.254661 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>123, "LongName"=>"/tests/.git/.git/logs/refs/heads/master", "Children"=>[]}
+D, [2016-02-04T09:07:56.254805 #29026] DEBUG -- : Current length is 124
+D, [2016-02-04T09:07:56.256633 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.256768 #29026] DEBUG -- : {"Name"=>"HEAD", "Parent"=>118, "LongName"=>"/tests/.git/.git/logs/HEAD", "Children"=>[]}
+D, [2016-02-04T09:07:56.256917 #29026] DEBUG -- : Current length is 125
+D, [2016-02-04T09:07:56.257932 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.258085 #29026] DEBUG -- : {"Name"=>"hooks", "Parent"=>117, "LongName"=>"/tests/.git/.git/hooks", "Children"=>[]}
+D, [2016-02-04T09:07:56.258261 #29026] DEBUG -- : Current length is 126
+D, [2016-02-04T09:07:56.258584 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.258724 #29026] DEBUG -- : {"Name"=>"pre-applypatch.sample", "Parent"=>126, "LongName"=>"/tests/.git/.git/hooks/pre-applypatch.sample", "Children"=>[]}
+D, [2016-02-04T09:07:56.258898 #29026] DEBUG -- : Current length is 127
+D, [2016-02-04T09:07:56.259670 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.259801 #29026] DEBUG -- : {"Name"=>"prepare-commit-msg.sample", "Parent"=>126, "LongName"=>"/tests/.git/.git/hooks/prepare-commit-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:07:56.260026 #29026] DEBUG -- : Current length is 128
+D, [2016-02-04T09:07:56.260893 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.261087 #29026] DEBUG -- : {"Name"=>"update.sample", "Parent"=>126, "LongName"=>"/tests/.git/.git/hooks/update.sample", "Children"=>[]}
+D, [2016-02-04T09:07:56.261306 #29026] DEBUG -- : Current length is 129
+D, [2016-02-04T09:07:56.262089 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.262254 #29026] DEBUG -- : {"Name"=>"pre-rebase.sample", "Parent"=>126, "LongName"=>"/tests/.git/.git/hooks/pre-rebase.sample", "Children"=>[]}
+D, [2016-02-04T09:07:56.262493 #29026] DEBUG -- : Current length is 130
+D, [2016-02-04T09:07:56.263264 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.263393 #29026] DEBUG -- : {"Name"=>"post-update.sample", "Parent"=>126, "LongName"=>"/tests/.git/.git/hooks/post-update.sample", "Children"=>[]}
+D, [2016-02-04T09:07:56.263581 #29026] DEBUG -- : Current length is 131
+D, [2016-02-04T09:07:56.264241 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.264362 #29026] DEBUG -- : {"Name"=>"applypatch-msg.sample", "Parent"=>126, "LongName"=>"/tests/.git/.git/hooks/applypatch-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:07:56.264573 #29026] DEBUG -- : Current length is 132
+D, [2016-02-04T09:07:56.265215 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.265325 #29026] DEBUG -- : {"Name"=>"commit-msg.sample", "Parent"=>126, "LongName"=>"/tests/.git/.git/hooks/commit-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:07:56.265463 #29026] DEBUG -- : Current length is 133
+D, [2016-02-04T09:07:56.266167 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.266305 #29026] DEBUG -- : {"Name"=>"pre-commit.sample", "Parent"=>126, "LongName"=>"/tests/.git/.git/hooks/pre-commit.sample", "Children"=>[]}
+D, [2016-02-04T09:07:56.266477 #29026] DEBUG -- : Current length is 134
+D, [2016-02-04T09:07:56.267253 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.267382 #29026] DEBUG -- : {"Name"=>"pre-push.sample", "Parent"=>126, "LongName"=>"/tests/.git/.git/hooks/pre-push.sample", "Children"=>[]}
+D, [2016-02-04T09:07:56.267552 #29026] DEBUG -- : Current length is 135
+D, [2016-02-04T09:07:56.268634 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.268782 #29026] DEBUG -- : {"Name"=>"refs", "Parent"=>117, "LongName"=>"/tests/.git/.git/refs", "Children"=>[]}
+D, [2016-02-04T09:07:56.269014 #29026] DEBUG -- : Current length is 136
+D, [2016-02-04T09:07:56.269385 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.269560 #29026] DEBUG -- : {"Name"=>"heads", "Parent"=>136, "LongName"=>"/tests/.git/.git/refs/heads", "Children"=>[]}
+D, [2016-02-04T09:07:56.269780 #29026] DEBUG -- : Current length is 137
+D, [2016-02-04T09:07:56.270007 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.270105 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>137, "LongName"=>"/tests/.git/.git/refs/heads/master", "Children"=>[]}
+D, [2016-02-04T09:07:56.270230 #29026] DEBUG -- : Current length is 138
+D, [2016-02-04T09:07:56.271070 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.271212 #29026] DEBUG -- : {"Name"=>"remotes", "Parent"=>136, "LongName"=>"/tests/.git/.git/refs/remotes", "Children"=>[]}
+D, [2016-02-04T09:07:56.271361 #29026] DEBUG -- : Current length is 139
+D, [2016-02-04T09:07:56.271588 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.271674 #29026] DEBUG -- : {"Name"=>"origin", "Parent"=>139, "LongName"=>"/tests/.git/.git/refs/remotes/origin", "Children"=>[]}
+D, [2016-02-04T09:07:56.271778 #29026] DEBUG -- : Current length is 140
+D, [2016-02-04T09:07:56.271993 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.272079 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>140, "LongName"=>"/tests/.git/.git/refs/remotes/origin/master", "Children"=>[]}
+D, [2016-02-04T09:07:56.272184 #29026] DEBUG -- : Current length is 141
+D, [2016-02-04T09:07:56.273419 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.273500 #29026] DEBUG -- : {"Name"=>"tags", "Parent"=>136, "LongName"=>"/tests/.git/.git/refs/tags", "Children"=>[]}
+D, [2016-02-04T09:07:56.273595 #29026] DEBUG -- : Current length is 142
+D, [2016-02-04T09:07:56.274218 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.274298 #29026] DEBUG -- : {"Name"=>"objects", "Parent"=>117, "LongName"=>"/tests/.git/.git/objects", "Children"=>[]}
+D, [2016-02-04T09:07:56.274394 #29026] DEBUG -- : Current length is 143
+D, [2016-02-04T09:07:56.274592 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.274668 #29026] DEBUG -- : {"Name"=>"pack", "Parent"=>143, "LongName"=>"/tests/.git/.git/objects/pack", "Children"=>[]}
+D, [2016-02-04T09:07:56.274764 #29026] DEBUG -- : Current length is 144
+D, [2016-02-04T09:07:56.275217 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.275296 #29026] DEBUG -- : {"Name"=>"51", "Parent"=>143, "LongName"=>"/tests/.git/.git/objects/51", "Children"=>[]}
+D, [2016-02-04T09:07:56.275391 #29026] DEBUG -- : Current length is 145
+D, [2016-02-04T09:07:56.275591 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.275708 #29026] DEBUG -- : {"Name"=>"50663d21320c9d1eca935240a71eefb5a4dac8", "Parent"=>145, "LongName"=>"/tests/.git/.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8", "Children"=>[]}
+D, [2016-02-04T09:07:56.275811 #29026] DEBUG -- : Current length is 146
+D, [2016-02-04T09:07:56.276625 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.276705 #29026] DEBUG -- : {"Name"=>"ae", "Parent"=>143, "LongName"=>"/tests/.git/.git/objects/ae", "Children"=>[]}
+D, [2016-02-04T09:07:56.276801 #29026] DEBUG -- : Current length is 147
+D, [2016-02-04T09:07:56.277001 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.277078 #29026] DEBUG -- : {"Name"=>"be3e7db03c1bedbd75b4e3b09c47c139117cc1", "Parent"=>147, "LongName"=>"/tests/.git/.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1", "Children"=>[]}
+D, [2016-02-04T09:07:56.277177 #29026] DEBUG -- : Current length is 148
+D, [2016-02-04T09:07:56.277966 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.278049 #29026] DEBUG -- : {"Name"=>"1e", "Parent"=>143, "LongName"=>"/tests/.git/.git/objects/1e", "Children"=>[]}
+D, [2016-02-04T09:07:56.278146 #29026] DEBUG -- : Current length is 149
+D, [2016-02-04T09:07:56.278378 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.278456 #29026] DEBUG -- : {"Name"=>"bb1130cd25ca078c2b94fa644eae55065c3a76", "Parent"=>149, "LongName"=>"/tests/.git/.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76", "Children"=>[]}
+D, [2016-02-04T09:07:56.278555 #29026] DEBUG -- : Current length is 150
+D, [2016-02-04T09:07:56.279331 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.279410 #29026] DEBUG -- : {"Name"=>"ca", "Parent"=>143, "LongName"=>"/tests/.git/.git/objects/ca", "Children"=>[]}
+D, [2016-02-04T09:07:56.279504 #29026] DEBUG -- : Current length is 151
+D, [2016-02-04T09:07:56.279707 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.279783 #29026] DEBUG -- : {"Name"=>"04cd0ad96a1a7fd4f290b463a4afc6e63657a0", "Parent"=>151, "LongName"=>"/tests/.git/.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0", "Children"=>[]}
+D, [2016-02-04T09:07:56.279881 #29026] DEBUG -- : Current length is 152
+D, [2016-02-04T09:07:56.280689 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.280769 #29026] DEBUG -- : {"Name"=>"a1", "Parent"=>143, "LongName"=>"/tests/.git/.git/objects/a1", "Children"=>[]}
+D, [2016-02-04T09:07:56.280863 #29026] DEBUG -- : Current length is 153
+D, [2016-02-04T09:07:56.281067 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.281143 #29026] DEBUG -- : {"Name"=>"48a97d961f46d6355fab3d0a8600476d73210c", "Parent"=>153, "LongName"=>"/tests/.git/.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c", "Children"=>[]}
+D, [2016-02-04T09:07:56.281241 #29026] DEBUG -- : Current length is 154
+D, [2016-02-04T09:07:56.282079 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.282162 #29026] DEBUG -- : {"Name"=>"cc", "Parent"=>143, "LongName"=>"/tests/.git/.git/objects/cc", "Children"=>[]}
+D, [2016-02-04T09:07:56.282253 #29026] DEBUG -- : Current length is 155
+D, [2016-02-04T09:07:56.282446 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.282518 #29026] DEBUG -- : {"Name"=>"aced389a9b8cf793e38307b8be014117cc5e24", "Parent"=>155, "LongName"=>"/tests/.git/.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24", "Children"=>[]}
+D, [2016-02-04T09:07:56.282615 #29026] DEBUG -- : Current length is 156
+D, [2016-02-04T09:07:56.283523 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.283607 #29026] DEBUG -- : {"Name"=>"6b", "Parent"=>143, "LongName"=>"/tests/.git/.git/objects/6b", "Children"=>[]}
+D, [2016-02-04T09:07:56.283698 #29026] DEBUG -- : Current length is 157
+D, [2016-02-04T09:07:56.283895 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.283967 #29026] DEBUG -- : {"Name"=>"4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0", "Parent"=>157, "LongName"=>"/tests/.git/.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0", "Children"=>[]}
+D, [2016-02-04T09:07:56.284094 #29026] DEBUG -- : Current length is 158
+D, [2016-02-04T09:07:56.284896 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.284972 #29026] DEBUG -- : {"Name"=>"info", "Parent"=>143, "LongName"=>"/tests/.git/.git/objects/info", "Children"=>[]}
+D, [2016-02-04T09:07:56.285090 #29026] DEBUG -- : Current length is 159
+D, [2016-02-04T09:07:56.285732 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.285812 #29026] DEBUG -- : {"Name"=>"branches", "Parent"=>117, "LongName"=>"/tests/.git/.git/branches", "Children"=>[]}
+D, [2016-02-04T09:07:56.285903 #29026] DEBUG -- : Current length is 160
+D, [2016-02-04T09:07:56.286239 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.286313 #29026] DEBUG -- : {"Name"=>"HEAD", "Parent"=>117, "LongName"=>"/tests/.git/.git/HEAD", "Children"=>[]}
+D, [2016-02-04T09:07:56.286403 #29026] DEBUG -- : Current length is 161
+D, [2016-02-04T09:07:56.286718 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.286791 #29026] DEBUG -- : {"Name"=>"config", "Parent"=>117, "LongName"=>"/tests/.git/.git/config", "Children"=>[]}
+D, [2016-02-04T09:07:56.286880 #29026] DEBUG -- : Current length is 162
+D, [2016-02-04T09:07:56.287213 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.287287 #29026] DEBUG -- : {"Name"=>"description", "Parent"=>117, "LongName"=>"/tests/.git/.git/description", "Children"=>[]}
+D, [2016-02-04T09:07:56.287376 #29026] DEBUG -- : Current length is 163
+D, [2016-02-04T09:07:56.287877 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.287954 #29026] DEBUG -- : {"Name"=>"info", "Parent"=>117, "LongName"=>"/tests/.git/.git/info", "Children"=>[]}
+D, [2016-02-04T09:07:56.288044 #29026] DEBUG -- : Current length is 164
+D, [2016-02-04T09:07:56.288244 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.288316 #29026] DEBUG -- : {"Name"=>"exclude", "Parent"=>164, "LongName"=>"/tests/.git/.git/info/exclude", "Children"=>[]}
+D, [2016-02-04T09:07:56.288406 #29026] DEBUG -- : Current length is 165
+D, [2016-02-04T09:07:56.288970 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.289044 #29026] DEBUG -- : {"Name"=>"index", "Parent"=>117, "LongName"=>"/tests/.git/.git/index", "Children"=>[]}
+D, [2016-02-04T09:07:56.289132 #29026] DEBUG -- : Current length is 166
+D, [2016-02-04T09:07:56.289480 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:07:56.289554 #29026] DEBUG -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>117, "LongName"=>"/tests/.git/.git/COMMIT_EDITMSG", "Children"=>[]}
+D, [2016-02-04T09:07:56.289658 #29026] DEBUG -- : Current length is 167
+D, [2016-02-04T09:08:03.572570 #29026] DEBUG -- : Recorded command describe 167
+I, [2016-02-04T09:08:03.572973 #29026]  INFO -- : Record of number 167
+I, [2016-02-04T09:08:03.573175 #29026]  INFO -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>117, "LongName"=>"/tests/.git/.git/COMMIT_EDITMSG", "Children"=>[]}
+D, [2016-02-04T09:08:27.290243 #29026] DEBUG -- : Recorded command del .git
+D, [2016-02-04T09:08:30.540085 #29026] DEBUG -- : Recorded command describe 167
+I, [2016-02-04T09:08:30.540450 #29026]  INFO -- : No record of record number 167
+D, [2016-02-04T09:08:33.011477 #29026] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:08:34.188098 #29026] DEBUG -- : Recorded command cd tests
+D, [2016-02-04T09:08:34.750581 #29026] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:08:36.538629 #29026] DEBUG -- : Recorded command cd .git
+D, [2016-02-04T09:08:36.885715 #29026] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:08:42.708230 #29026] DEBUG -- : Recorded command cd ..
+D, [2016-02-04T09:08:43.062773 #29026] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:08:47.557486 #29026] DEBUG -- : Recorded command cp .git /
+I, [2016-02-04T09:08:47.558173 #29026]  INFO -- : Just replaced /tests/.git/logs/refs/remotes/origin/master with /.git/logs/refs/remotes/origin/master
+I, [2016-02-04T09:08:47.558500 #29026]  INFO -- : Just replaced /tests/.git/logs/refs/remotes/origin with /.git/logs/refs/remotes/origin
+I, [2016-02-04T09:08:47.558756 #29026]  INFO -- : Just replaced /tests/.git/logs/refs/remotes with /.git/logs/refs/remotes
+I, [2016-02-04T09:08:47.559000 #29026]  INFO -- : Just replaced /tests/.git/logs/refs/heads/master with /.git/logs/refs/heads/master
+I, [2016-02-04T09:08:47.559246 #29026]  INFO -- : Just replaced /tests/.git/logs/refs/heads with /.git/logs/refs/heads
+I, [2016-02-04T09:08:47.559454 #29026]  INFO -- : Just replaced /tests/.git/logs/refs with /.git/logs/refs
+I, [2016-02-04T09:08:47.559671 #29026]  INFO -- : Just replaced /tests/.git/logs/HEAD with /.git/logs/HEAD
+I, [2016-02-04T09:08:47.559870 #29026]  INFO -- : Just replaced /tests/.git/logs with /.git/logs
+I, [2016-02-04T09:08:47.560076 #29026]  INFO -- : Just replaced /tests/.git/hooks/pre-applypatch.sample with /.git/hooks/pre-applypatch.sample
+I, [2016-02-04T09:08:47.560266 #29026]  INFO -- : Just replaced /tests/.git/hooks/prepare-commit-msg.sample with /.git/hooks/prepare-commit-msg.sample
+I, [2016-02-04T09:08:47.560480 #29026]  INFO -- : Just replaced /tests/.git/hooks/update.sample with /.git/hooks/update.sample
+I, [2016-02-04T09:08:47.560660 #29026]  INFO -- : Just replaced /tests/.git/hooks/pre-rebase.sample with /.git/hooks/pre-rebase.sample
+I, [2016-02-04T09:08:47.560839 #29026]  INFO -- : Just replaced /tests/.git/hooks/post-update.sample with /.git/hooks/post-update.sample
+I, [2016-02-04T09:08:47.561020 #29026]  INFO -- : Just replaced /tests/.git/hooks/applypatch-msg.sample with /.git/hooks/applypatch-msg.sample
+I, [2016-02-04T09:08:47.561239 #29026]  INFO -- : Just replaced /tests/.git/hooks/commit-msg.sample with /.git/hooks/commit-msg.sample
+I, [2016-02-04T09:08:47.561576 #29026]  INFO -- : Just replaced /tests/.git/hooks/pre-commit.sample with /.git/hooks/pre-commit.sample
+I, [2016-02-04T09:08:47.562084 #29026]  INFO -- : Just replaced /tests/.git/hooks/pre-push.sample with /.git/hooks/pre-push.sample
+I, [2016-02-04T09:08:47.562440 #29026]  INFO -- : Just replaced /tests/.git/hooks with /.git/hooks
+I, [2016-02-04T09:08:47.563064 #29026]  INFO -- : Just replaced /tests/.git/refs/heads/master with /.git/refs/heads/master
+I, [2016-02-04T09:08:47.563284 #29026]  INFO -- : Just replaced /tests/.git/refs/heads with /.git/refs/heads
+I, [2016-02-04T09:08:47.563511 #29026]  INFO -- : Just replaced /tests/.git/refs/remotes/origin/master with /.git/refs/remotes/origin/master
+I, [2016-02-04T09:08:47.563733 #29026]  INFO -- : Just replaced /tests/.git/refs/remotes/origin with /.git/refs/remotes/origin
+I, [2016-02-04T09:08:47.563947 #29026]  INFO -- : Just replaced /tests/.git/refs/remotes with /.git/refs/remotes
+I, [2016-02-04T09:08:47.564182 #29026]  INFO -- : Just replaced /tests/.git/refs/tags with /.git/refs/tags
+I, [2016-02-04T09:08:47.564400 #29026]  INFO -- : Just replaced /tests/.git/refs with /.git/refs
+I, [2016-02-04T09:08:47.564613 #29026]  INFO -- : Just replaced /tests/.git/objects/pack with /.git/objects/pack
+I, [2016-02-04T09:08:47.564824 #29026]  INFO -- : Just replaced /tests/.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8 with /.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8
+I, [2016-02-04T09:08:47.565033 #29026]  INFO -- : Just replaced /tests/.git/objects/51 with /.git/objects/51
+I, [2016-02-04T09:08:47.565247 #29026]  INFO -- : Just replaced /tests/.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1 with /.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1
+I, [2016-02-04T09:08:47.565457 #29026]  INFO -- : Just replaced /tests/.git/objects/ae with /.git/objects/ae
+I, [2016-02-04T09:08:47.565723 #29026]  INFO -- : Just replaced /tests/.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76 with /.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76
+I, [2016-02-04T09:08:47.565949 #29026]  INFO -- : Just replaced /tests/.git/objects/1e with /.git/objects/1e
+I, [2016-02-04T09:08:47.566139 #29026]  INFO -- : Just replaced /tests/.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0 with /.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0
+I, [2016-02-04T09:08:47.566409 #29026]  INFO -- : Just replaced /tests/.git/objects/ca with /.git/objects/ca
+I, [2016-02-04T09:08:47.566596 #29026]  INFO -- : Just replaced /tests/.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c with /.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c
+I, [2016-02-04T09:08:47.566779 #29026]  INFO -- : Just replaced /tests/.git/objects/a1 with /.git/objects/a1
+I, [2016-02-04T09:08:47.566970 #29026]  INFO -- : Just replaced /tests/.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24 with /.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24
+I, [2016-02-04T09:08:47.567160 #29026]  INFO -- : Just replaced /tests/.git/objects/cc with /.git/objects/cc
+I, [2016-02-04T09:08:47.567355 #29026]  INFO -- : Just replaced /tests/.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0 with /.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0
+I, [2016-02-04T09:08:47.567543 #29026]  INFO -- : Just replaced /tests/.git/objects/6b with /.git/objects/6b
+I, [2016-02-04T09:08:47.567926 #29026]  INFO -- : Just replaced /tests/.git/objects/info with /.git/objects/info
+I, [2016-02-04T09:08:47.568116 #29026]  INFO -- : Just replaced /tests/.git/objects with /.git/objects
+I, [2016-02-04T09:08:47.568362 #29026]  INFO -- : Just replaced /tests/.git/branches with /.git/branches
+I, [2016-02-04T09:08:47.568559 #29026]  INFO -- : Just replaced /tests/.git/HEAD with /.git/HEAD
+I, [2016-02-04T09:08:47.568727 #29026]  INFO -- : Just replaced /tests/.git/config with /.git/config
+I, [2016-02-04T09:08:47.568869 #29026]  INFO -- : Just replaced /tests/.git/description with /.git/description
+I, [2016-02-04T09:08:47.569011 #29026]  INFO -- : Just replaced /tests/.git/info/exclude with /.git/info/exclude
+I, [2016-02-04T09:08:47.569151 #29026]  INFO -- : Just replaced /tests/.git/info with /.git/info
+I, [2016-02-04T09:08:47.569293 #29026]  INFO -- : Just replaced /tests/.git/index with /.git/index
+I, [2016-02-04T09:08:47.569433 #29026]  INFO -- : Just replaced /tests/.git/COMMIT_EDITMSG with /.git/COMMIT_EDITMSG
+I, [2016-02-04T09:08:47.569585 #29026]  INFO -- : Just replaced /tests/.git/.git/logs/refs/remotes/origin/master with /.git/.git/logs/refs/remotes/origin/master
+I, [2016-02-04T09:08:47.569757 #29026]  INFO -- : Just replaced /tests/.git/.git/logs/refs/remotes/origin with /.git/.git/logs/refs/remotes/origin
+I, [2016-02-04T09:08:47.569908 #29026]  INFO -- : Just replaced /tests/.git/.git/logs/refs/remotes with /.git/.git/logs/refs/remotes
+I, [2016-02-04T09:08:47.570034 #29026]  INFO -- : Just replaced /tests/.git/.git/logs/refs/heads/master with /.git/.git/logs/refs/heads/master
+I, [2016-02-04T09:08:47.570154 #29026]  INFO -- : Just replaced /tests/.git/.git/logs/refs/heads with /.git/.git/logs/refs/heads
+I, [2016-02-04T09:08:47.570272 #29026]  INFO -- : Just replaced /tests/.git/.git/logs/refs with /.git/.git/logs/refs
+I, [2016-02-04T09:08:47.570392 #29026]  INFO -- : Just replaced /tests/.git/.git/logs/HEAD with /.git/.git/logs/HEAD
+I, [2016-02-04T09:08:47.570512 #29026]  INFO -- : Just replaced /tests/.git/.git/logs with /.git/.git/logs
+I, [2016-02-04T09:08:47.570634 #29026]  INFO -- : Just replaced /tests/.git/.git/hooks/pre-applypatch.sample with /.git/.git/hooks/pre-applypatch.sample
+I, [2016-02-04T09:08:47.570756 #29026]  INFO -- : Just replaced /tests/.git/.git/hooks/prepare-commit-msg.sample with /.git/.git/hooks/prepare-commit-msg.sample
+I, [2016-02-04T09:08:47.570877 #29026]  INFO -- : Just replaced /tests/.git/.git/hooks/update.sample with /.git/.git/hooks/update.sample
+I, [2016-02-04T09:08:47.570998 #29026]  INFO -- : Just replaced /tests/.git/.git/hooks/pre-rebase.sample with /.git/.git/hooks/pre-rebase.sample
+I, [2016-02-04T09:08:47.571117 #29026]  INFO -- : Just replaced /tests/.git/.git/hooks/post-update.sample with /.git/.git/hooks/post-update.sample
+I, [2016-02-04T09:08:47.571238 #29026]  INFO -- : Just replaced /tests/.git/.git/hooks/applypatch-msg.sample with /.git/.git/hooks/applypatch-msg.sample
+I, [2016-02-04T09:08:47.571358 #29026]  INFO -- : Just replaced /tests/.git/.git/hooks/commit-msg.sample with /.git/.git/hooks/commit-msg.sample
+I, [2016-02-04T09:08:47.571549 #29026]  INFO -- : Just replaced /tests/.git/.git/hooks/pre-commit.sample with /.git/.git/hooks/pre-commit.sample
+I, [2016-02-04T09:08:47.571696 #29026]  INFO -- : Just replaced /tests/.git/.git/hooks/pre-push.sample with /.git/.git/hooks/pre-push.sample
+I, [2016-02-04T09:08:47.571817 #29026]  INFO -- : Just replaced /tests/.git/.git/hooks with /.git/.git/hooks
+I, [2016-02-04T09:08:47.571941 #29026]  INFO -- : Just replaced /tests/.git/.git/refs/heads/master with /.git/.git/refs/heads/master
+I, [2016-02-04T09:08:47.572059 #29026]  INFO -- : Just replaced /tests/.git/.git/refs/heads with /.git/.git/refs/heads
+I, [2016-02-04T09:08:47.572183 #29026]  INFO -- : Just replaced /tests/.git/.git/refs/remotes/origin/master with /.git/.git/refs/remotes/origin/master
+I, [2016-02-04T09:08:47.572305 #29026]  INFO -- : Just replaced /tests/.git/.git/refs/remotes/origin with /.git/.git/refs/remotes/origin
+I, [2016-02-04T09:08:47.572424 #29026]  INFO -- : Just replaced /tests/.git/.git/refs/remotes with /.git/.git/refs/remotes
+I, [2016-02-04T09:08:47.572548 #29026]  INFO -- : Just replaced /tests/.git/.git/refs/tags with /.git/.git/refs/tags
+I, [2016-02-04T09:08:47.572694 #29026]  INFO -- : Just replaced /tests/.git/.git/refs with /.git/.git/refs
+I, [2016-02-04T09:08:47.572851 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/pack with /.git/.git/objects/pack
+I, [2016-02-04T09:08:47.573132 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8 with /.git/.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8
+I, [2016-02-04T09:08:47.573372 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/51 with /.git/.git/objects/51
+I, [2016-02-04T09:08:47.573603 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1 with /.git/.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1
+I, [2016-02-04T09:08:47.573834 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/ae with /.git/.git/objects/ae
+I, [2016-02-04T09:08:47.573973 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76 with /.git/.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76
+I, [2016-02-04T09:08:47.574106 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/1e with /.git/.git/objects/1e
+I, [2016-02-04T09:08:47.574231 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0 with /.git/.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0
+I, [2016-02-04T09:08:47.574352 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/ca with /.git/.git/objects/ca
+I, [2016-02-04T09:08:47.574475 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c with /.git/.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c
+I, [2016-02-04T09:08:47.574596 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/a1 with /.git/.git/objects/a1
+I, [2016-02-04T09:08:47.574756 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24 with /.git/.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24
+I, [2016-02-04T09:08:47.574877 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/cc with /.git/.git/objects/cc
+I, [2016-02-04T09:08:47.575001 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0 with /.git/.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0
+I, [2016-02-04T09:08:47.575120 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/6b with /.git/.git/objects/6b
+I, [2016-02-04T09:08:47.575287 #29026]  INFO -- : Just replaced /tests/.git/.git/objects/info with /.git/.git/objects/info
+I, [2016-02-04T09:08:47.575419 #29026]  INFO -- : Just replaced /tests/.git/.git/objects with /.git/.git/objects
+I, [2016-02-04T09:08:47.575545 #29026]  INFO -- : Just replaced /tests/.git/.git/branches with /.git/.git/branches
+I, [2016-02-04T09:08:47.575681 #29026]  INFO -- : Just replaced /tests/.git/.git/HEAD with /.git/.git/HEAD
+I, [2016-02-04T09:08:47.575822 #29026]  INFO -- : Just replaced /tests/.git/.git/config with /.git/.git/config
+I, [2016-02-04T09:08:47.575945 #29026]  INFO -- : Just replaced /tests/.git/.git/description with /.git/.git/description
+I, [2016-02-04T09:08:47.576079 #29026]  INFO -- : Just replaced /tests/.git/.git/info/exclude with /.git/.git/info/exclude
+I, [2016-02-04T09:08:47.576220 #29026]  INFO -- : Just replaced /tests/.git/.git/info with /.git/.git/info
+I, [2016-02-04T09:08:47.576360 #29026]  INFO -- : Just replaced /tests/.git/.git/index with /.git/.git/index
+I, [2016-02-04T09:08:47.576481 #29026]  INFO -- : Just replaced /tests/.git/.git/COMMIT_EDITMSG with /.git/.git/COMMIT_EDITMSG
+I, [2016-02-04T09:08:47.576596 #29026]  INFO -- : Just replaced /tests/.git/.git with /.git/.git
+I, [2016-02-04T09:08:47.576715 #29026]  INFO -- : Just replaced /tests/.git with /.git
+D, [2016-02-04T09:08:47.576957 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.577045 #29026] DEBUG -- : {"Name"=>".git", "Parent"=>0, "LongName"=>"/.git", "Children"=>[]}
+D, [2016-02-04T09:08:47.577156 #29026] DEBUG -- : Current length is 117
+D, [2016-02-04T09:08:47.577356 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.577439 #29026] DEBUG -- : {"Name"=>"logs", "Parent"=>117, "LongName"=>"/.git/logs", "Children"=>[]}
+D, [2016-02-04T09:08:47.577541 #29026] DEBUG -- : Current length is 118
+D, [2016-02-04T09:08:47.577785 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.577870 #29026] DEBUG -- : {"Name"=>"refs", "Parent"=>118, "LongName"=>"/.git/logs/refs", "Children"=>[]}
+D, [2016-02-04T09:08:47.577974 #29026] DEBUG -- : Current length is 119
+D, [2016-02-04T09:08:47.578170 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.578253 #29026] DEBUG -- : {"Name"=>"remotes", "Parent"=>119, "LongName"=>"/.git/logs/refs/remotes", "Children"=>[]}
+D, [2016-02-04T09:08:47.578366 #29026] DEBUG -- : Current length is 120
+D, [2016-02-04T09:08:47.578647 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.578748 #29026] DEBUG -- : {"Name"=>"origin", "Parent"=>120, "LongName"=>"/.git/logs/refs/remotes/origin", "Children"=>[]}
+D, [2016-02-04T09:08:47.578886 #29026] DEBUG -- : Current length is 121
+D, [2016-02-04T09:08:47.579154 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.579260 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>121, "LongName"=>"/.git/logs/refs/remotes/origin/master", "Children"=>[]}
+D, [2016-02-04T09:08:47.579415 #29026] DEBUG -- : Current length is 122
+D, [2016-02-04T09:08:47.580865 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.580968 #29026] DEBUG -- : {"Name"=>"heads", "Parent"=>119, "LongName"=>"/.git/logs/refs/heads", "Children"=>[]}
+D, [2016-02-04T09:08:47.581081 #29026] DEBUG -- : Current length is 123
+D, [2016-02-04T09:08:47.581303 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.581391 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>123, "LongName"=>"/.git/logs/refs/heads/master", "Children"=>[]}
+D, [2016-02-04T09:08:47.581520 #29026] DEBUG -- : Current length is 124
+D, [2016-02-04T09:08:47.582597 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.582686 #29026] DEBUG -- : {"Name"=>"HEAD", "Parent"=>118, "LongName"=>"/.git/logs/HEAD", "Children"=>[]}
+D, [2016-02-04T09:08:47.582783 #29026] DEBUG -- : Current length is 125
+D, [2016-02-04T09:08:47.583288 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.583368 #29026] DEBUG -- : {"Name"=>"hooks", "Parent"=>117, "LongName"=>"/.git/hooks", "Children"=>[]}
+D, [2016-02-04T09:08:47.583462 #29026] DEBUG -- : Current length is 126
+D, [2016-02-04T09:08:47.583658 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.583737 #29026] DEBUG -- : {"Name"=>"pre-applypatch.sample", "Parent"=>126, "LongName"=>"/.git/hooks/pre-applypatch.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.583874 #29026] DEBUG -- : Current length is 127
+D, [2016-02-04T09:08:47.584258 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.584312 #29026] DEBUG -- : {"Name"=>"prepare-commit-msg.sample", "Parent"=>126, "LongName"=>"/.git/hooks/prepare-commit-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.584374 #29026] DEBUG -- : Current length is 128
+D, [2016-02-04T09:08:47.584618 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.584667 #29026] DEBUG -- : {"Name"=>"update.sample", "Parent"=>126, "LongName"=>"/.git/hooks/update.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.584739 #29026] DEBUG -- : Current length is 129
+D, [2016-02-04T09:08:47.585109 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.585188 #29026] DEBUG -- : {"Name"=>"pre-rebase.sample", "Parent"=>126, "LongName"=>"/.git/hooks/pre-rebase.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.585285 #29026] DEBUG -- : Current length is 130
+D, [2016-02-04T09:08:47.585688 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.585772 #29026] DEBUG -- : {"Name"=>"post-update.sample", "Parent"=>126, "LongName"=>"/.git/hooks/post-update.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.585865 #29026] DEBUG -- : Current length is 131
+D, [2016-02-04T09:08:47.586241 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.586320 #29026] DEBUG -- : {"Name"=>"applypatch-msg.sample", "Parent"=>126, "LongName"=>"/.git/hooks/applypatch-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.586438 #29026] DEBUG -- : Current length is 132
+D, [2016-02-04T09:08:47.586818 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.586896 #29026] DEBUG -- : {"Name"=>"commit-msg.sample", "Parent"=>126, "LongName"=>"/.git/hooks/commit-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.586988 #29026] DEBUG -- : Current length is 133
+D, [2016-02-04T09:08:47.587381 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.587478 #29026] DEBUG -- : {"Name"=>"pre-commit.sample", "Parent"=>126, "LongName"=>"/.git/hooks/pre-commit.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.587578 #29026] DEBUG -- : Current length is 134
+D, [2016-02-04T09:08:47.587952 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.588031 #29026] DEBUG -- : {"Name"=>"pre-push.sample", "Parent"=>126, "LongName"=>"/.git/hooks/pre-push.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.588130 #29026] DEBUG -- : Current length is 135
+D, [2016-02-04T09:08:47.588615 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.588694 #29026] DEBUG -- : {"Name"=>"refs", "Parent"=>117, "LongName"=>"/.git/refs", "Children"=>[]}
+D, [2016-02-04T09:08:47.588788 #29026] DEBUG -- : Current length is 136
+D, [2016-02-04T09:08:47.588990 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.589069 #29026] DEBUG -- : {"Name"=>"heads", "Parent"=>136, "LongName"=>"/.git/refs/heads", "Children"=>[]}
+D, [2016-02-04T09:08:47.589163 #29026] DEBUG -- : Current length is 137
+D, [2016-02-04T09:08:47.589365 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.589449 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>137, "LongName"=>"/.git/refs/heads/master", "Children"=>[]}
+D, [2016-02-04T09:08:47.589543 #29026] DEBUG -- : Current length is 138
+D, [2016-02-04T09:08:47.590079 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.590133 #29026] DEBUG -- : {"Name"=>"remotes", "Parent"=>136, "LongName"=>"/.git/refs/remotes", "Children"=>[]}
+D, [2016-02-04T09:08:47.590222 #29026] DEBUG -- : Current length is 139
+D, [2016-02-04T09:08:47.590404 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.590454 #29026] DEBUG -- : {"Name"=>"origin", "Parent"=>139, "LongName"=>"/.git/refs/remotes/origin", "Children"=>[]}
+D, [2016-02-04T09:08:47.590544 #29026] DEBUG -- : Current length is 140
+D, [2016-02-04T09:08:47.590715 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.590763 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>140, "LongName"=>"/.git/refs/remotes/origin/master", "Children"=>[]}
+D, [2016-02-04T09:08:47.590895 #29026] DEBUG -- : Current length is 141
+D, [2016-02-04T09:08:47.591658 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.591708 #29026] DEBUG -- : {"Name"=>"tags", "Parent"=>136, "LongName"=>"/.git/refs/tags", "Children"=>[]}
+D, [2016-02-04T09:08:47.591801 #29026] DEBUG -- : Current length is 142
+D, [2016-02-04T09:08:47.592184 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.592234 #29026] DEBUG -- : {"Name"=>"objects", "Parent"=>117, "LongName"=>"/.git/objects", "Children"=>[]}
+D, [2016-02-04T09:08:47.592326 #29026] DEBUG -- : Current length is 143
+D, [2016-02-04T09:08:47.592495 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.592549 #29026] DEBUG -- : {"Name"=>"pack", "Parent"=>143, "LongName"=>"/.git/objects/pack", "Children"=>[]}
+D, [2016-02-04T09:08:47.592642 #29026] DEBUG -- : Current length is 144
+D, [2016-02-04T09:08:47.592944 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.592994 #29026] DEBUG -- : {"Name"=>"51", "Parent"=>143, "LongName"=>"/.git/objects/51", "Children"=>[]}
+D, [2016-02-04T09:08:47.593087 #29026] DEBUG -- : Current length is 145
+D, [2016-02-04T09:08:47.593258 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.593307 #29026] DEBUG -- : {"Name"=>"50663d21320c9d1eca935240a71eefb5a4dac8", "Parent"=>145, "LongName"=>"/.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8", "Children"=>[]}
+D, [2016-02-04T09:08:47.593386 #29026] DEBUG -- : Current length is 146
+D, [2016-02-04T09:08:47.593874 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.593926 #29026] DEBUG -- : {"Name"=>"ae", "Parent"=>143, "LongName"=>"/.git/objects/ae", "Children"=>[]}
+D, [2016-02-04T09:08:47.594012 #29026] DEBUG -- : Current length is 147
+D, [2016-02-04T09:08:47.594186 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.594244 #29026] DEBUG -- : {"Name"=>"be3e7db03c1bedbd75b4e3b09c47c139117cc1", "Parent"=>147, "LongName"=>"/.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1", "Children"=>[]}
+D, [2016-02-04T09:08:47.594312 #29026] DEBUG -- : Current length is 148
+D, [2016-02-04T09:08:47.594792 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.594842 #29026] DEBUG -- : {"Name"=>"1e", "Parent"=>143, "LongName"=>"/.git/objects/1e", "Children"=>[]}
+D, [2016-02-04T09:08:47.594929 #29026] DEBUG -- : Current length is 149
+D, [2016-02-04T09:08:47.595088 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.595136 #29026] DEBUG -- : {"Name"=>"bb1130cd25ca078c2b94fa644eae55065c3a76", "Parent"=>149, "LongName"=>"/.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76", "Children"=>[]}
+D, [2016-02-04T09:08:47.595215 #29026] DEBUG -- : Current length is 150
+D, [2016-02-04T09:08:47.595679 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.595729 #29026] DEBUG -- : {"Name"=>"ca", "Parent"=>143, "LongName"=>"/.git/objects/ca", "Children"=>[]}
+D, [2016-02-04T09:08:47.595817 #29026] DEBUG -- : Current length is 151
+D, [2016-02-04T09:08:47.595993 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.596042 #29026] DEBUG -- : {"Name"=>"04cd0ad96a1a7fd4f290b463a4afc6e63657a0", "Parent"=>151, "LongName"=>"/.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0", "Children"=>[]}
+D, [2016-02-04T09:08:47.596132 #29026] DEBUG -- : Current length is 152
+D, [2016-02-04T09:08:47.596683 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.596743 #29026] DEBUG -- : {"Name"=>"a1", "Parent"=>143, "LongName"=>"/.git/objects/a1", "Children"=>[]}
+D, [2016-02-04T09:08:47.596827 #29026] DEBUG -- : Current length is 153
+D, [2016-02-04T09:08:47.596999 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.597058 #29026] DEBUG -- : {"Name"=>"48a97d961f46d6355fab3d0a8600476d73210c", "Parent"=>153, "LongName"=>"/.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c", "Children"=>[]}
+D, [2016-02-04T09:08:47.597158 #29026] DEBUG -- : Current length is 154
+D, [2016-02-04T09:08:47.597643 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.597698 #29026] DEBUG -- : {"Name"=>"cc", "Parent"=>143, "LongName"=>"/.git/objects/cc", "Children"=>[]}
+D, [2016-02-04T09:08:47.597781 #29026] DEBUG -- : Current length is 155
+D, [2016-02-04T09:08:47.597942 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.597991 #29026] DEBUG -- : {"Name"=>"aced389a9b8cf793e38307b8be014117cc5e24", "Parent"=>155, "LongName"=>"/.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24", "Children"=>[]}
+D, [2016-02-04T09:08:47.598070 #29026] DEBUG -- : Current length is 156
+D, [2016-02-04T09:08:47.598588 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.598639 #29026] DEBUG -- : {"Name"=>"6b", "Parent"=>143, "LongName"=>"/.git/objects/6b", "Children"=>[]}
+D, [2016-02-04T09:08:47.598726 #29026] DEBUG -- : Current length is 157
+D, [2016-02-04T09:08:47.598895 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.598944 #29026] DEBUG -- : {"Name"=>"4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0", "Parent"=>157, "LongName"=>"/.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0", "Children"=>[]}
+D, [2016-02-04T09:08:47.599033 #29026] DEBUG -- : Current length is 158
+D, [2016-02-04T09:08:47.599757 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.599810 #29026] DEBUG -- : {"Name"=>"info", "Parent"=>143, "LongName"=>"/.git/objects/info", "Children"=>[]}
+D, [2016-02-04T09:08:47.599896 #29026] DEBUG -- : Current length is 159
+D, [2016-02-04T09:08:47.600313 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.600364 #29026] DEBUG -- : {"Name"=>"branches", "Parent"=>117, "LongName"=>"/.git/branches", "Children"=>[]}
+D, [2016-02-04T09:08:47.600450 #29026] DEBUG -- : Current length is 160
+D, [2016-02-04T09:08:47.600681 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.600731 #29026] DEBUG -- : {"Name"=>"HEAD", "Parent"=>117, "LongName"=>"/.git/HEAD", "Children"=>[]}
+D, [2016-02-04T09:08:47.600817 #29026] DEBUG -- : Current length is 161
+D, [2016-02-04T09:08:47.601116 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.601166 #29026] DEBUG -- : {"Name"=>"config", "Parent"=>117, "LongName"=>"/.git/config", "Children"=>[]}
+D, [2016-02-04T09:08:47.601252 #29026] DEBUG -- : Current length is 162
+D, [2016-02-04T09:08:47.601481 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.601530 #29026] DEBUG -- : {"Name"=>"description", "Parent"=>117, "LongName"=>"/.git/description", "Children"=>[]}
+D, [2016-02-04T09:08:47.601623 #29026] DEBUG -- : Current length is 163
+D, [2016-02-04T09:08:47.601875 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.601925 #29026] DEBUG -- : {"Name"=>"info", "Parent"=>117, "LongName"=>"/.git/info", "Children"=>[]}
+D, [2016-02-04T09:08:47.601995 #29026] DEBUG -- : Current length is 164
+D, [2016-02-04T09:08:47.602142 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.602190 #29026] DEBUG -- : {"Name"=>"exclude", "Parent"=>164, "LongName"=>"/.git/info/exclude", "Children"=>[]}
+D, [2016-02-04T09:08:47.602248 #29026] DEBUG -- : Current length is 165
+D, [2016-02-04T09:08:47.602595 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.602644 #29026] DEBUG -- : {"Name"=>"index", "Parent"=>117, "LongName"=>"/.git/index", "Children"=>[]}
+D, [2016-02-04T09:08:47.602703 #29026] DEBUG -- : Current length is 166
+D, [2016-02-04T09:08:47.602892 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.602941 #29026] DEBUG -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>117, "LongName"=>"/.git/COMMIT_EDITMSG", "Children"=>[]}
+D, [2016-02-04T09:08:47.603000 #29026] DEBUG -- : Current length is 167
+D, [2016-02-04T09:08:47.603195 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.603244 #29026] DEBUG -- : {"Name"=>".git", "Parent"=>117, "LongName"=>"/.git/.git", "Children"=>[]}
+D, [2016-02-04T09:08:47.603326 #29026] DEBUG -- : Current length is 168
+D, [2016-02-04T09:08:47.603463 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.603511 #29026] DEBUG -- : {"Name"=>"logs", "Parent"=>168, "LongName"=>"/.git/.git/logs", "Children"=>[]}
+D, [2016-02-04T09:08:47.603570 #29026] DEBUG -- : Current length is 169
+D, [2016-02-04T09:08:47.603719 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.603768 #29026] DEBUG -- : {"Name"=>"refs", "Parent"=>169, "LongName"=>"/.git/.git/logs/refs", "Children"=>[]}
+D, [2016-02-04T09:08:47.603827 #29026] DEBUG -- : Current length is 170
+D, [2016-02-04T09:08:47.603964 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.604012 #29026] DEBUG -- : {"Name"=>"remotes", "Parent"=>170, "LongName"=>"/.git/.git/logs/refs/remotes", "Children"=>[]}
+D, [2016-02-04T09:08:47.604072 #29026] DEBUG -- : Current length is 171
+D, [2016-02-04T09:08:47.604214 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.604262 #29026] DEBUG -- : {"Name"=>"origin", "Parent"=>171, "LongName"=>"/.git/.git/logs/refs/remotes/origin", "Children"=>[]}
+D, [2016-02-04T09:08:47.604321 #29026] DEBUG -- : Current length is 172
+D, [2016-02-04T09:08:47.604478 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.604527 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>172, "LongName"=>"/.git/.git/logs/refs/remotes/origin/master", "Children"=>[]}
+D, [2016-02-04T09:08:47.604587 #29026] DEBUG -- : Current length is 173
+D, [2016-02-04T09:08:47.605805 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.605861 #29026] DEBUG -- : {"Name"=>"heads", "Parent"=>170, "LongName"=>"/.git/.git/logs/refs/heads", "Children"=>[]}
+D, [2016-02-04T09:08:47.605923 #29026] DEBUG -- : Current length is 174
+D, [2016-02-04T09:08:47.606066 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.606116 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>174, "LongName"=>"/.git/.git/logs/refs/heads/master", "Children"=>[]}
+D, [2016-02-04T09:08:47.606175 #29026] DEBUG -- : Current length is 175
+D, [2016-02-04T09:08:47.607190 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.607242 #29026] DEBUG -- : {"Name"=>"HEAD", "Parent"=>169, "LongName"=>"/.git/.git/logs/HEAD", "Children"=>[]}
+D, [2016-02-04T09:08:47.607301 #29026] DEBUG -- : Current length is 176
+D, [2016-02-04T09:08:47.607781 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.607831 #29026] DEBUG -- : {"Name"=>"hooks", "Parent"=>168, "LongName"=>"/.git/.git/hooks", "Children"=>[]}
+D, [2016-02-04T09:08:47.607890 #29026] DEBUG -- : Current length is 177
+D, [2016-02-04T09:08:47.608042 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.608092 #29026] DEBUG -- : {"Name"=>"pre-applypatch.sample", "Parent"=>177, "LongName"=>"/.git/.git/hooks/pre-applypatch.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.608152 #29026] DEBUG -- : Current length is 178
+D, [2016-02-04T09:08:47.608518 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.608567 #29026] DEBUG -- : {"Name"=>"prepare-commit-msg.sample", "Parent"=>177, "LongName"=>"/.git/.git/hooks/prepare-commit-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.608627 #29026] DEBUG -- : Current length is 179
+D, [2016-02-04T09:08:47.608970 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.609019 #29026] DEBUG -- : {"Name"=>"update.sample", "Parent"=>177, "LongName"=>"/.git/.git/hooks/update.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.609079 #29026] DEBUG -- : Current length is 180
+D, [2016-02-04T09:08:47.609427 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.609476 #29026] DEBUG -- : {"Name"=>"pre-rebase.sample", "Parent"=>177, "LongName"=>"/.git/.git/hooks/pre-rebase.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.609536 #29026] DEBUG -- : Current length is 181
+D, [2016-02-04T09:08:47.609888 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.609966 #29026] DEBUG -- : {"Name"=>"post-update.sample", "Parent"=>177, "LongName"=>"/.git/.git/hooks/post-update.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.610028 #29026] DEBUG -- : Current length is 182
+D, [2016-02-04T09:08:47.610393 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.610449 #29026] DEBUG -- : {"Name"=>"applypatch-msg.sample", "Parent"=>177, "LongName"=>"/.git/.git/hooks/applypatch-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.610511 #29026] DEBUG -- : Current length is 183
+D, [2016-02-04T09:08:47.611120 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.611188 #29026] DEBUG -- : {"Name"=>"commit-msg.sample", "Parent"=>177, "LongName"=>"/.git/.git/hooks/commit-msg.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.611253 #29026] DEBUG -- : Current length is 184
+D, [2016-02-04T09:08:47.611608 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.611666 #29026] DEBUG -- : {"Name"=>"pre-commit.sample", "Parent"=>177, "LongName"=>"/.git/.git/hooks/pre-commit.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.611726 #29026] DEBUG -- : Current length is 185
+D, [2016-02-04T09:08:47.612102 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.612162 #29026] DEBUG -- : {"Name"=>"pre-push.sample", "Parent"=>177, "LongName"=>"/.git/.git/hooks/pre-push.sample", "Children"=>[]}
+D, [2016-02-04T09:08:47.612226 #29026] DEBUG -- : Current length is 186
+D, [2016-02-04T09:08:47.612723 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.612789 #29026] DEBUG -- : {"Name"=>"refs", "Parent"=>168, "LongName"=>"/.git/.git/refs", "Children"=>[]}
+D, [2016-02-04T09:08:47.612866 #29026] DEBUG -- : Current length is 187
+D, [2016-02-04T09:08:47.613061 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.613112 #29026] DEBUG -- : {"Name"=>"heads", "Parent"=>187, "LongName"=>"/.git/.git/refs/heads", "Children"=>[]}
+D, [2016-02-04T09:08:47.613171 #29026] DEBUG -- : Current length is 188
+D, [2016-02-04T09:08:47.613322 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.613370 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>188, "LongName"=>"/.git/.git/refs/heads/master", "Children"=>[]}
+D, [2016-02-04T09:08:47.613431 #29026] DEBUG -- : Current length is 189
+D, [2016-02-04T09:08:47.614154 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.614270 #29026] DEBUG -- : {"Name"=>"remotes", "Parent"=>187, "LongName"=>"/.git/.git/refs/remotes", "Children"=>[]}
+D, [2016-02-04T09:08:47.614373 #29026] DEBUG -- : Current length is 190
+D, [2016-02-04T09:08:47.614573 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.614647 #29026] DEBUG -- : {"Name"=>"origin", "Parent"=>190, "LongName"=>"/.git/.git/refs/remotes/origin", "Children"=>[]}
+D, [2016-02-04T09:08:47.614734 #29026] DEBUG -- : Current length is 191
+D, [2016-02-04T09:08:47.614902 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.614960 #29026] DEBUG -- : {"Name"=>"master", "Parent"=>191, "LongName"=>"/.git/.git/refs/remotes/origin/master", "Children"=>[]}
+D, [2016-02-04T09:08:47.615028 #29026] DEBUG -- : Current length is 192
+D, [2016-02-04T09:08:47.616235 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.616290 #29026] DEBUG -- : {"Name"=>"tags", "Parent"=>187, "LongName"=>"/.git/.git/refs/tags", "Children"=>[]}
+D, [2016-02-04T09:08:47.616351 #29026] DEBUG -- : Current length is 193
+D, [2016-02-04T09:08:47.616957 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.617009 #29026] DEBUG -- : {"Name"=>"objects", "Parent"=>168, "LongName"=>"/.git/.git/objects", "Children"=>[]}
+D, [2016-02-04T09:08:47.617070 #29026] DEBUG -- : Current length is 194
+D, [2016-02-04T09:08:47.617236 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.617285 #29026] DEBUG -- : {"Name"=>"pack", "Parent"=>194, "LongName"=>"/.git/.git/objects/pack", "Children"=>[]}
+D, [2016-02-04T09:08:47.617373 #29026] DEBUG -- : Current length is 195
+D, [2016-02-04T09:08:47.617780 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.617831 #29026] DEBUG -- : {"Name"=>"51", "Parent"=>194, "LongName"=>"/.git/.git/objects/51", "Children"=>[]}
+D, [2016-02-04T09:08:47.617889 #29026] DEBUG -- : Current length is 196
+D, [2016-02-04T09:08:47.618033 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.618080 #29026] DEBUG -- : {"Name"=>"50663d21320c9d1eca935240a71eefb5a4dac8", "Parent"=>196, "LongName"=>"/.git/.git/objects/51/50663d21320c9d1eca935240a71eefb5a4dac8", "Children"=>[]}
+D, [2016-02-04T09:08:47.618139 #29026] DEBUG -- : Current length is 197
+D, [2016-02-04T09:08:47.618812 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.618863 #29026] DEBUG -- : {"Name"=>"ae", "Parent"=>194, "LongName"=>"/.git/.git/objects/ae", "Children"=>[]}
+D, [2016-02-04T09:08:47.618920 #29026] DEBUG -- : Current length is 198
+D, [2016-02-04T09:08:47.619084 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.619130 #29026] DEBUG -- : {"Name"=>"be3e7db03c1bedbd75b4e3b09c47c139117cc1", "Parent"=>198, "LongName"=>"/.git/.git/objects/ae/be3e7db03c1bedbd75b4e3b09c47c139117cc1", "Children"=>[]}
+D, [2016-02-04T09:08:47.619190 #29026] DEBUG -- : Current length is 199
+D, [2016-02-04T09:08:47.619824 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.619872 #29026] DEBUG -- : {"Name"=>"1e", "Parent"=>194, "LongName"=>"/.git/.git/objects/1e", "Children"=>[]}
+D, [2016-02-04T09:08:47.619930 #29026] DEBUG -- : Current length is 200
+D, [2016-02-04T09:08:47.620072 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.620118 #29026] DEBUG -- : {"Name"=>"bb1130cd25ca078c2b94fa644eae55065c3a76", "Parent"=>200, "LongName"=>"/.git/.git/objects/1e/bb1130cd25ca078c2b94fa644eae55065c3a76", "Children"=>[]}
+D, [2016-02-04T09:08:47.620176 #29026] DEBUG -- : Current length is 201
+D, [2016-02-04T09:08:47.620808 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.620856 #29026] DEBUG -- : {"Name"=>"ca", "Parent"=>194, "LongName"=>"/.git/.git/objects/ca", "Children"=>[]}
+D, [2016-02-04T09:08:47.620913 #29026] DEBUG -- : Current length is 202
+D, [2016-02-04T09:08:47.621064 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.621110 #29026] DEBUG -- : {"Name"=>"04cd0ad96a1a7fd4f290b463a4afc6e63657a0", "Parent"=>202, "LongName"=>"/.git/.git/objects/ca/04cd0ad96a1a7fd4f290b463a4afc6e63657a0", "Children"=>[]}
+D, [2016-02-04T09:08:47.621168 #29026] DEBUG -- : Current length is 203
+D, [2016-02-04T09:08:47.621837 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.621887 #29026] DEBUG -- : {"Name"=>"a1", "Parent"=>194, "LongName"=>"/.git/.git/objects/a1", "Children"=>[]}
+D, [2016-02-04T09:08:47.621943 #29026] DEBUG -- : Current length is 204
+D, [2016-02-04T09:08:47.622088 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.622135 #29026] DEBUG -- : {"Name"=>"48a97d961f46d6355fab3d0a8600476d73210c", "Parent"=>204, "LongName"=>"/.git/.git/objects/a1/48a97d961f46d6355fab3d0a8600476d73210c", "Children"=>[]}
+D, [2016-02-04T09:08:47.622199 #29026] DEBUG -- : Current length is 205
+D, [2016-02-04T09:08:47.622833 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.622881 #29026] DEBUG -- : {"Name"=>"cc", "Parent"=>194, "LongName"=>"/.git/.git/objects/cc", "Children"=>[]}
+D, [2016-02-04T09:08:47.622938 #29026] DEBUG -- : Current length is 206
+D, [2016-02-04T09:08:47.623110 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.623159 #29026] DEBUG -- : {"Name"=>"aced389a9b8cf793e38307b8be014117cc5e24", "Parent"=>206, "LongName"=>"/.git/.git/objects/cc/aced389a9b8cf793e38307b8be014117cc5e24", "Children"=>[]}
+D, [2016-02-04T09:08:47.623218 #29026] DEBUG -- : Current length is 207
+D, [2016-02-04T09:08:47.623868 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.623915 #29026] DEBUG -- : {"Name"=>"6b", "Parent"=>194, "LongName"=>"/.git/.git/objects/6b", "Children"=>[]}
+D, [2016-02-04T09:08:47.623993 #29026] DEBUG -- : Current length is 208
+D, [2016-02-04T09:08:47.624159 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.624206 #29026] DEBUG -- : {"Name"=>"4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0", "Parent"=>208, "LongName"=>"/.git/.git/objects/6b/4b5435e7c3c85f4a6dc5ba85a41e1369fb87b0", "Children"=>[]}
+D, [2016-02-04T09:08:47.624266 #29026] DEBUG -- : Current length is 209
+D, [2016-02-04T09:08:47.624927 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.624976 #29026] DEBUG -- : {"Name"=>"info", "Parent"=>194, "LongName"=>"/.git/.git/objects/info", "Children"=>[]}
+D, [2016-02-04T09:08:47.625033 #29026] DEBUG -- : Current length is 210
+D, [2016-02-04T09:08:47.625523 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.625570 #29026] DEBUG -- : {"Name"=>"branches", "Parent"=>168, "LongName"=>"/.git/.git/branches", "Children"=>[]}
+D, [2016-02-04T09:08:47.625637 #29026] DEBUG -- : Current length is 211
+D, [2016-02-04T09:08:47.625921 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.625968 #29026] DEBUG -- : {"Name"=>"HEAD", "Parent"=>168, "LongName"=>"/.git/.git/HEAD", "Children"=>[]}
+D, [2016-02-04T09:08:47.626025 #29026] DEBUG -- : Current length is 212
+D, [2016-02-04T09:08:47.626312 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.626360 #29026] DEBUG -- : {"Name"=>"config", "Parent"=>168, "LongName"=>"/.git/.git/config", "Children"=>[]}
+D, [2016-02-04T09:08:47.626417 #29026] DEBUG -- : Current length is 213
+D, [2016-02-04T09:08:47.626690 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.626737 #29026] DEBUG -- : {"Name"=>"description", "Parent"=>168, "LongName"=>"/.git/.git/description", "Children"=>[]}
+D, [2016-02-04T09:08:47.626810 #29026] DEBUG -- : Current length is 214
+D, [2016-02-04T09:08:47.627093 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.627141 #29026] DEBUG -- : {"Name"=>"info", "Parent"=>168, "LongName"=>"/.git/.git/info", "Children"=>[]}
+D, [2016-02-04T09:08:47.627198 #29026] DEBUG -- : Current length is 215
+D, [2016-02-04T09:08:47.627353 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.627400 #29026] DEBUG -- : {"Name"=>"exclude", "Parent"=>215, "LongName"=>"/.git/.git/info/exclude", "Children"=>[]}
+D, [2016-02-04T09:08:47.627456 #29026] DEBUG -- : Current length is 216
+D, [2016-02-04T09:08:47.627982 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.628030 #29026] DEBUG -- : {"Name"=>"index", "Parent"=>168, "LongName"=>"/.git/.git/index", "Children"=>[]}
+D, [2016-02-04T09:08:47.628087 #29026] DEBUG -- : Current length is 217
+D, [2016-02-04T09:08:47.628374 #29026] DEBUG -- : Just added the following hash:
+D, [2016-02-04T09:08:47.628421 #29026] DEBUG -- : {"Name"=>"COMMIT_EDITMSG", "Parent"=>168, "LongName"=>"/.git/.git/COMMIT_EDITMSG", "Children"=>[]}
+D, [2016-02-04T09:08:47.628478 #29026] DEBUG -- : Current length is 218
+D, [2016-02-04T09:08:49.921966 #29026] DEBUG -- : Recorded command cd ..
+D, [2016-02-04T09:08:50.993595 #29026] DEBUG -- : Recorded command cd .git
+D, [2016-02-04T09:08:51.556345 #29026] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:08:53.195446 #29026] DEBUG -- : Recorded command cd .git
+D, [2016-02-04T09:08:54.087974 #29026] DEBUG -- : Recorded command cd ..
+D, [2016-02-04T09:08:56.602280 #29026] DEBUG -- : Recorded command del .git
+D, [2016-02-04T09:08:57.909288 #29026] DEBUG -- : Recorded command ls
+D, [2016-02-04T09:10:08.969155 #29026] DEBUG -- : Recorded command save

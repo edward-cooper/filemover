@@ -1,13 +1,13 @@
 #!/usr/bin/ruby -w
 
 require 'logger'
-logger = Logger.new('logfile.log')
-logger.level = Logger::DEBUG
-
+$logger = Logger.new('logfile.log')
+$logger.level = Logger::DEBUG
 $filename = 'randomised2.txt'
 
 class Tree
   @@addChildrenByDefault = true
+  @finishedInitialize = false
   def initializeP()
     # Do this while we figure out how child-classes and initialize work together
     @flatList = Array.new
@@ -23,6 +23,11 @@ class Tree
       if (@@addChildrenByDefault and someHash['Parent']) then
         @flatList[someHash['Parent']]['Children'].push (currentLength); 
       end
+      if (@finishedInitialize) then
+	$logger.debug("Just added the following hash:")
+	$logger.debug(@flatList[-1])
+	$logger.debug("Current length is #{currentLength}")
+      end 
       return currentLength
     else
       return nil
@@ -104,7 +109,6 @@ class Tree
     }
   end
   def doSomethingRecursively(number,action,actionees)
-    puts "Entering dsr for #{number}"
     @flatList[number]['Children'].reverse.each { | x |
       doSomethingRecursively(x,action,{ })
     }
@@ -130,23 +134,9 @@ class EdDirectoryClass < Tree
       end
       addDirectory(x.chomp) 
     }
-    
+    @finishedInitialize = true  
   end
-  #def copyDirectory(copyeeNumber,parentNumber)
-    #copyeeDetails = getDetails(copyeeNumber)
-    #parentDetails = getDetails(parentNumber)
-    #if (parentDetails == nil or copyeeDetails == nil) then
-      #return nil
-#
-    #else
-      #puts "calling adddirectory"
-      #puts addDirectory(parentDetails['LongName'] + '/' + copyeeDetails['Name'] )
-    #end
-  #end
   def addDirectory(longName)
-    #while (longName == '.' or longName[0] == '/')
-      #longName = longName[1..-1]
-    #end
     namesArray = splitLongName(longName)
     parentNumber = 0 
     namesArray.each_index { | i |
@@ -193,9 +183,42 @@ class EdDirectoryClass < Tree
     end
     
   end
-  def move(number,targetDirName)
-    oldParent = @flatList[number]['Parent']
+  def copy(number,targetDirName)
+    results = Array.new
+    existingParentNumber = @flatList[number]['Parent'].to_i;
+    existingParentLongName = @flatList[existingParentNumber]['LongName'];
+
+    # below: check new directory exists. Should be its own function as it's a duplicate with moveACTION
     targetDirNumber = @flatList.index { | x | x["LongName"].chomp == targetDirName }
+    if (targetDirNumber == nil) then
+      return nil
+    end
+    getNewName = lambda { | copyeeNumber, targetDirNameX |
+      @flatList[copyeeNumber]['Children'].each { | x |
+        getNewName.call(x,targetDirNameX)
+      } 
+      existingCopyeeLongName = @flatList[copyeeNumber]['LongName'] 
+      if (targetDirNameX[-1] != '/') then
+        targetDirNameX = targetDirNameX + '/'
+      end
+
+      newCopyeeLongName = existingCopyeeLongName.sub(/#{existingParentLongName}/,targetDirNameX)
+      # below: replace any double forward-slashes with single forward-slashes
+      newCopyeeLongName.gsub!(/\/\//,'/'); 
+      $logger.info("Just replaced #{existingCopyeeLongName} with #{newCopyeeLongName}")
+      results.push(newCopyeeLongName)
+    }
+    getNewName.call(number,targetDirName)
+    results.each { | x | addDirectory(x) }
+    
+  end
+  def move(number,targetDirName)
+    # takes a serial number and a long directory name (string) as arguments. Returns nil if targetDirName not found (ie target directory doesn't exist); otherwise, doesn't return aynthing (at the moment).
+
+    oldParent = @flatList[number]['Parent']
+
+    #below: check new directory exists, otherwise return nil
+    targetDirNumber = @flatList.index { | x | x["LongName"].chomp == targetDirName } 
     if (targetDirNumber == nil) then
       return nil
     end
@@ -216,6 +239,14 @@ class EdDirectoryClass < Tree
       #@flatList[x]['LongName'] = getLongName(x)
     #}
   end
+  def describe(number)
+    if(@flatList[number]) then
+      $logger.info("Record of number #{number}")
+      $logger.info(@flatList[number])
+    else
+      $logger.info("No record of record number #{number}")
+    end
+  end
 end
 
 class EdPromptClass
@@ -231,6 +262,7 @@ class EdPromptClass
   end
   def menuChoice(promptInput)
     promptInput = promptInput.chomp
+    $logger.debug("Recorded command #{promptInput}")
     promptWords = promptInput.split(" ")
     currentDirName = getCurrentDirDetails['Name']
     if (promptWords[0] == 'ls') then
@@ -253,9 +285,14 @@ class EdPromptClass
       puts "Current directory is #{currentDirName}"
     elsif (promptWords[0] == 'exit' or promptWords[0] == 'quit') then
       puts "Quitting."
+      $logger.info("QUIT-----------------------------------------------")
       exit
     elsif (promptWords[0] == 'del') then
       @targetTree.deleteRecord(@targetTree.getSerialNumber(promptWords[1].chomp,@currentDirectory))
+    elsif (promptWords[0] == 'describe') then
+      @targetTree.describe(promptWords[1].chomp.to_i)
+    elsif (promptWords[0] == 'cp') then
+      result = @targetTree.copy(@targetTree.getSerialNumber(promptWords[1].chomp,@currentDirectory),promptWords[2].chomp)
     elsif (promptWords[0] == 'mv') then
 
       result = @targetTree.move(@targetTree.getSerialNumber(promptWords[1].chomp,@currentDirectory),promptWords[2].chomp)
@@ -286,8 +323,8 @@ class EdPromptClass
 
   end
 end
-
-
+$logger.info("\n\n")
+$logger.info("STARTED--------------------------------")
 
 inputFile = File.new($filename,'r')
 dirTree = EdDirectoryClass.new(inputFile.readlines)
