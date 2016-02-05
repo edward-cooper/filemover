@@ -1,5 +1,11 @@
 #!/usr/bin/ruby -w
 
+# TO DO LIST:
+# - make sure Prompt class doesn't use serial numbers or ordinary names to interface with Directory class. Prompt class shouldn't know about these at all. It should only use absolute longnames, or possibly relative names.
+# - try implementing multiple prompts, with a way of switching between them.
+# - make it possible to convert relative paths to absolute paths within Prompt class, before passing this to Directory.
+# - fix error handling, especialyl within prompt. Pass the full command+arguments combo to a different method within Prompt (as an array), and handle it there.
+
 require 'logger'
 $logger = Logger.new('logfile.log')
 $logger.level = Logger::DEBUG
@@ -155,11 +161,17 @@ class EdDirectoryClass < Tree
   end
   def showContents(directory)
     # returns an array containing the NAMES of the children of the current directory
-    # the argument 'directory'  must be one of two object types:
+    # the argument 'directory'  must be one of three object types:
     # either a) a hash, which must contain the elements 'Name' and 'Parent'. Name is a string; parent is an integer.
     # or b) an integer, which is the directory-in-question's serial number.
+    # or c) a string (called from prompt class), which must be a long directory name.
     if (directory.is_a? Hash) then 
       directoryNumber = getSerialNumber(directory['Name'], directory['Parent'])
+    elsif (directory.is_a? String) then
+      directoryNumber = @flatList.index { | x | x['LongName'] == directory.chomp }
+      if directoryNumber == nil then
+	return nil
+      end
     else # just assume it's an integer :)
       directoryNumber = directory
     end 
@@ -182,6 +194,14 @@ class EdDirectoryClass < Tree
       return getLongName(@flatList[number]['Parent'].to_i).to_s + '/' + @flatList[number]['Name']
     end
     
+  end
+  def getParent (directory)
+    # takes a string, which is the directory's longname. Returns a string, which is the directory's parent's longname.
+    # returns nil if fails, and writes an error to the logfile.
+    # ACTION above
+    directoryNumber = @flatList.index {| x | x['LongName'] = directory.chomp }
+    directoryNumber == nil and ( return nil )
+    return @flatList[directoryNumber]['LongName'].chomp 
   end
   def copy(number,targetDirName)
     results = Array.new
@@ -257,25 +277,30 @@ class EdPromptClass
       exit
     else
       @targetTree = targetTree 
-      @currentDirectory =  0
+      @currentDirectory = '/' 
     end
+  end
+  def convertToAbsolute(path)
+    # takes a relative path and converts it to an absolute one.
+    	 
   end
   def menuChoice(promptInput)
     promptInput = promptInput.chomp
     $logger.debug("Recorded command #{promptInput}")
     promptWords = promptInput.split(" ")
-    currentDirName = getCurrentDirDetails['Name']
+    # currentDirName = getCurrentDirDetails['Name']
     if (promptWords[0] == 'ls') then
-      puts "Contents of #{currentDirName}:"
+      puts "Contents of #{@currentDirectory}:"
       contents = @targetTree.showContents(@currentDirectory) 
       puts contents 
     elsif (promptWords[0] == 'cd') then
       oldDirectory = @currentDirectory
       if (promptWords[1] == '..') then
-        @currentDirectory = @targetTree.getDetails(@currentDirectory)['Parent'].to_i
+        @currentDirectory = getParent(@currentDirectory)
       else
-	# need to check directory acutally exists...
-        @currentDirectory = @targetTree.getSerialNumber(promptWords[1].chomp,@currentDirectory)
+	# need to insert some code to check directory acutally exists...
+        @currentDirectory = convertToAbsolute(promptWords[1])	
+
       end
       if (not @currentDirectory) then
 	puts "DIRECTORY NOT FOUND"
@@ -319,8 +344,8 @@ class EdPromptClass
 
   end
   def getCurrentDirDetails()
-    return @targetTree.getDetails(@currentDirectory)
-
+     puts "THIS SHOULD NO LONGER BE CALLED."
+     exit
   end
 end
 $logger.info("\n\n")
