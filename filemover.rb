@@ -7,9 +7,12 @@
 # - fix error handling, especialyl within prompt. Pass the full command+arguments combo to a different method within Prompt (as an array), and handle it there.
 
 require 'logger'
-$logger = Logger.new('logfile.log')
-$logger.level = Logger::DEBUG
-$filename = 'randomised2.txt'
+$logger = Logger.new('/home/edward/tmp/fifo1')
+$logger.level = Logger::INFO
+
+$filename = 'output5.txt'
+
+$errorstack = Array.new
 
 class Tree
   @@addChildrenByDefault = true
@@ -18,6 +21,11 @@ class Tree
     # Do this while we figure out how child-classes and initialize work together
     @flatList = Array.new
     @totalDeletions = 0
+  end
+  def checkNil
+    @flatList.each_index { | x |
+      x or ($logger.warn "#{x} is nil")
+    }
   end
   def AddNew(someHash)
   # Is passed a hash containing (at least) a name and a parent number.
@@ -44,26 +52,30 @@ class Tree
     # For example, if we delete record number 15, then any reference of a parent or child to a record of >15 will be moved down one.
     # Before doing this, we recurse on given record's children (if there are any), in order to do exactly the same for any children of the record.
     # Recursion on children takes place backwards. This is because changes made to lower-numbered records affects (or can affect) higher-numbered records, but not vice-versa.
-    
-    @flatList[recordNumber] and @flatList[recordNumber]['Children'].reverse.each { | x |
+    $logger.info("Deleting record #{recordNumber}: #{@flatList[recordNumber]}")
+    @flatList[recordNumber] and @flatList[recordNumber]['Children'].sort.reverse.each { | x |
+    # thinking about it, we want to reverse the elements' values, not the ordering of the elements themselves. Above line may need changing.
       deleteRecord(x.to_i)
     }
     @flatList.delete_at(recordNumber)
     @flatList.each { | x |
 
       if (x['Parent'].to_i > recordNumber) then
-        x['Parent'] = x['Parent'] - 1
+        x['Parent'] -= 1 
       end
       x['Children'].each_index { | y |
-	# puts "Entering children of #{x}['Name']"
-        if x['Children'][y] > recordNumber then
-	 x['Children'][y] = x['Children'][y] - 1 
+	if x['Children'][y] > recordNumber then
+	x['Children'][y] -= 1
 	elsif x['Children'][y] == recordNumber then
 	  # puts "Deleting child record #{recordNumber}"
-	  x['Children'].delete(recordNumber)
-	  
+	  # x['Children'].delete_at(y) # = nil
+	  # above: old way of doing it. This screwed up the array's index, since we were looping based on the very thing we were deleting.
+	  # below: new way of doing it. Just mark the record as nil, and delete it later.
+	  x['Children'][y] = nil 
 	end
       }
+      x['Children'].delete_if { | z | z == nil }
+      # THE LESSON: DON'T MESS WITH ARRAYS' INDICES WITHIN A LOOP BASED ON THAT ARRAY.
     }
    if (@flatList[recordNumber]) then
      parent = @flatList[recordNumber]['Parent']
@@ -142,6 +154,11 @@ class EdDirectoryClass < Tree
     }
     @finishedInitialize = true  
   end
+
+  def getNumberFromLongName(longName)
+    return @flatList.index { | x | x['LongName'] == longName }
+  end
+    
   def addDirectory(longName)
     namesArray = splitLongName(longName)
     parentNumber = 0 
@@ -203,15 +220,23 @@ class EdDirectoryClass < Tree
     directoryNumber == nil and ( return nil )
     return @flatList[directoryNumber]['LongName'].chomp 
   end
-  def copy(number,targetDirName)
+  def copy(currentDirName,targetDirName)
     results = Array.new
+    number = @flatList.index { | x | x['LongName'] == currentDirName.chomp }
+    # below: check we can find the source directory, and kick up an error if we can't find it.
+    if (number == nil) then 
+      $errorstack.push ("Can't find #{currentDirName}")
+      return nil
+    end
     existingParentNumber = @flatList[number]['Parent'].to_i;
     existingParentLongName = @flatList[existingParentNumber]['LongName'];
 
     # below: check new directory exists. Should be its own function as it's a duplicate with moveACTION
     targetDirNumber = @flatList.index { | x | x["LongName"].chomp == targetDirName }
+    # below: add the target directory if it doesn't exist.
     if (targetDirNumber == nil) then
-      return nil
+      addDirectory(targetDirName)
+      targetDirNumber = @flatList.index { | x | x == targetDirName }
     end
     getNewName = lambda { | copyeeNumber, targetDirNameX |
       @flatList[copyeeNumber]['Children'].each { | x |
@@ -232,9 +257,10 @@ class EdDirectoryClass < Tree
     results.each { | x | addDirectory(x) }
     
   end
-  def move(number,targetDirName)
+  def move(oldDirName,targetDirName)
     # takes a serial number and a long directory name (string) as arguments. Returns nil if targetDirName not found (ie target directory doesn't exist); otherwise, doesn't return aynthing (at the moment).
-
+    
+    number = @flatList.index { | x | x['LongName'] == oldDirName }
     oldParent = @flatList[number]['Parent']
 
     #below: check new directory exists, otherwise return nil
@@ -280,64 +306,74 @@ class EdPromptClass
       @currentDirectory = '/' 
     end
   end
-  def convertToAbsolute(path)
-    # takes a relative path and converts it to an absolute one.
-    	 
-  end
+
   def menuChoice(promptInput)
     promptInput = promptInput.chomp
     $logger.debug("Recorded command #{promptInput}")
     promptWords = promptInput.split(" ")
     # currentDirName = getCurrentDirDetails['Name']
+
     if (promptWords[0] == 'ls') then
-      puts "Contents of #{@currentDirectory}:"
-      contents = @targetTree.showContents(@currentDirectory) 
+      promptWords[1] ? showDirectory = toAbsolute(:relativeDirName => promptWords[1]) : showDirectory = @currentDirectory
+      # above: show current directory if none is specified. Otherwise, show the specified one, after it's absolutised.
+
+      @targetTree.getNumberFromLongName(showDirectory) or lambda { 
+	puts "#{showDirectory} not found. Showing current.".upcase
+        showDirectory = @currentDirectory
+      }.call 
+      # above: if directory doesn't exist in the tree, just show current.
+
+      puts "Contents of #{showDirectory}"
+      contents = @targetTree.showContents(showDirectory) 
       puts contents 
+
     elsif (promptWords[0] == 'cd') then
       oldDirectory = @currentDirectory
-      if (promptWords[1] == '..') then
-        @currentDirectory = getParent(@currentDirectory)
-      else
-	# need to insert some code to check directory acutally exists...
-        @currentDirectory = convertToAbsolute(promptWords[1])	
-
-      end
-      if (not @currentDirectory) then
-	puts "DIRECTORY NOT FOUND"
+      @currentDirectory = toAbsolute(:relativeDirName => promptWords[1])
+      if (not @targetTree.getNumberFromLongName(@currentDirectory)) then
+	puts "DIRECTORY #{@currentDirectory} NOT FOUND"
         @currentDirectory = oldDirectory
       end
-      currentDirName = getCurrentDirDetails['LongName']
-      puts "Current directory is #{currentDirName}"
+      # currentDirName = getCurrentDirDetails['LongName']
+      puts "Current directory is #{@currentDirectory}"
+
     elsif (promptWords[0] == 'exit' or promptWords[0] == 'quit') then
       puts "Quitting."
       $logger.info("QUIT-----------------------------------------------")
       exit
+    
     elsif (promptWords[0] == 'del') then
-      @targetTree.deleteRecord(@targetTree.getSerialNumber(promptWords[1].chomp,@currentDirectory))
+      dirName = toAbsolute(:relativeDirName => promptWords[1])
+      puts dirName
+      @targetTree.deleteRecord(@targetTree.getNumberFromLongName(dirName))
+       
     elsif (promptWords[0] == 'describe') then
       @targetTree.describe(promptWords[1].chomp.to_i)
-    elsif (promptWords[0] == 'cp') then
-      result = @targetTree.copy(@targetTree.getSerialNumber(promptWords[1].chomp,@currentDirectory),promptWords[2].chomp)
-    elsif (promptWords[0] == 'mv') then
 
-      result = @targetTree.move(@targetTree.getSerialNumber(promptWords[1].chomp,@currentDirectory),promptWords[2].chomp)
+    elsif (promptWords[0] == 'cp') then
+      fileA = toAbsolute(:relativeDirName => promptWords[1])
+      fileB = toAbsolute(:relativeDirName => promptWords[2])
+      # HERE
+      result = @targetTree.copy(fileA, fileB)
+      (not result) and puts $errorstack 
+
+    elsif (promptWords[0] == 'mv') then
+      fileA = toAbsolute(:relativeDirName => promptWords[1])
+      fileB = toAbsolute(:relativeDirName => promptWords[2])
+      result = @targetTree.move(fileA,fileB)
       if (not result) then
         puts "FAILED"
       end
+
     elsif (promptWords[0] == 'mkdir' or promptWords[0] == 'touch') then
-      longName = getCurrentDirDetails['LongName']
-      if (longName[-1] == '/') then
-        midName = ''
-      else
-        midName = '/'
-      end
-      newName = longName + midName  + promptWords[1].to_s
+      newName = toAbsolute(:relativeDirName => promptWords[1].to_s)
       @targetTree.addDirectory(newName)
       #puts "Added directory #{newName}"
+
     elsif (promptWords[0] == 'save')
       @targetTree.save(promptWords[1])
-    else
 
+    else
       puts "Command not recognised."
 
     end
@@ -347,15 +383,53 @@ class EdPromptClass
      puts "THIS SHOULD NO LONGER BE CALLED."
      exit
   end
+  def toAbsolute(options)
+    # need to add description, allowing for the fact that we TIDY UP THE PATH AS WELL AS ABSOLUTISING IT, WHETHER THE GIVEN PATH IS RELATIVE OR ABSOLUTE
+    relativeDirName = options[:relativeDirName]
+     
+    if (relativeDirName[0].chomp == '/') then
+      currentDir = ''
+    else
+      currentDir = @currentDirectory
+    end
+    # above: if path is already absolute then ignore the current directory, but tidy it up.
+
+    nameList = Array.new
+    nameList = relativeDirName.chomp.split('/')
+    nameList.delete('.')
+    # above: remove any refrences to current directory
+
+    if (nameList.index('..')) then
+      # if we detect a parent directory in the mix, things get more complicated. 
+      newDirList = Array.new
+      newDirList = currentDir.chomp.split('/')
+      nameList.each { | x |
+	if ( x == '..' ) then
+	  newDirList.pop
+	else
+	  newDirList.push(x.chomp)
+	end
+      }
+      returnDirName = '/' + newDirList.join('/')
+    else
+      returnDirName = currentDir + '/' + nameList.join('/') 
+    end
+    returnDirName.gsub!(/\/\//,'/') 
+    (returnDirName.length < 1) and returnDirName.gsub!(/\/$/,'')
+    return returnDirName
+  end
+
 end
+
+
 $logger.info("\n\n")
 $logger.info("STARTED--------------------------------")
-
 inputFile = File.new($filename,'r')
 dirTree = EdDirectoryClass.new(inputFile.readlines)
 inputFile.close
 dirTree.tellAll
 edPrompt = EdPromptClass.new(dirTree)
+dirTree.checkNil
 while (true) do 
   print "> "
   edPrompt.menuChoice(gets.chomp)
@@ -364,3 +438,5 @@ while (true) do
 end 
 # moved files/dirs have incorrect longnames. Need to fix this.
 # and copy function, where we just addDirectory(newName), and do the same for all the subdirectories
+
+
